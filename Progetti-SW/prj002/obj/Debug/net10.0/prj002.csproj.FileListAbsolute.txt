@@ -1,0 +1,14 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\bin\Debug\net10.0\prj002.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\bin\Debug\net10.0\prj002.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\bin\Debug\net10.0\prj002.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\bin\Debug\net10.0\prj002.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\bin\Debug\net10.0\prj002.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\obj\Debug\net10.0\prj002.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\obj\Debug\net10.0\prj002.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\obj\Debug\net10.0\prj002.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\obj\Debug\net10.0\prj002.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\obj\Debug\net10.0\prj002.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\obj\Debug\net10.0\refint\prj002.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\obj\Debug\net10.0\prj002.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\obj\Debug\net10.0\prj002.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW\prj002\obj\Debug\net10.0\ref\prj002.dll
