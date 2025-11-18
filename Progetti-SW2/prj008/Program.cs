@@ -214,6 +214,7 @@ public class HelloWorld
 
     // Esercizio delle 12:22
     // Ritorna il numero di volte che un elemento compare
+    
     int[] vett = { 1, 2, 3, 4, 5, 1, 3, 6, 2, 10 };
     Console.Write("Inserisci un numero da cercare nel vettore: ");
     int numeroCercato = Convert.ToInt32(Console.ReadLine());   
