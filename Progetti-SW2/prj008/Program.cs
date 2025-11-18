@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.Design;
 using System.Linq;
+using System.Runtime.InteropServices.Marshalling;
 public class HelloWorld
 {
         public static void Main(string[] args)
@@ -154,7 +155,86 @@ public class HelloWorld
         // }
         // Console.WriteLine(crescente ? "Array 2 è crescente" : "Array 2 non è crescente");
 
-        
+        // Esercizio delle 11:30
+        // Si vuole creare una applicazione che chieda all'utente quanti elementi 
+        // nel vettore vuole inserire, numero deve essere maggiore di zero altrimenti
+        // richiedere
+
+        // bool valido = true;
+        // while(valido)
+        // {
+        //     Console.Write("Stabilisci la quantità di elementi da inserire nel vettore? ");
+        //     int numeroElementi = Convert.ToInt32(Console.ReadLine());
+        //     if(numeroElementi > 0)
+        //     {
+        //         int[] vettoreUtente = new int[numeroElementi];
+        //         for(int i = 0; i < numeroElementi; i++)
+        //         {
+        //             Console.Write($"Inserisci l'elemento in posizione {i}: ");
+        //             vettoreUtente[i] = Convert.ToInt32(Console.ReadLine());
+        //         }
+        //             Console.WriteLine("Gli elementi inseriti sono:");
+        //         foreach(int elemento in vettoreUtente)
+        //         {
+        //             Console.WriteLine(elemento);
+        //         }
+        //         valido = false; 
+        //     }
+        //     else
+        //     {
+        //         Console.WriteLine("Errore: il numero deve essere maggiore e diverso da zero. Riprova.");
+        //     }
+
+    // int[] vettorino = { 2, 4, 6, 8, 10, 12, 14, 16, 19, 20 };
+    // //sommare gli elementi che si trovano in posizione pari e sono pari
+
+    // int somma = 0;
+    
+    // for(int i = 0; i < vettorino.Length; i+=2)
+    //         {
+    //             if(i %2 ==0 && vettorino[i] %  2 ==0)
+    //             {
+    //                 somma += vettorino[i];
+    //             }
+    //         }
+    // Console.WriteLine($"La somma degli elementi in posizione pari e che sono pari è: {somma}");
+
+    // //sommare gli elementi che si trovano in posizione dispari e sono dispari
+
+    // int somma2 = 0;
+    
+    // for(int i = 0; i < vettorino.Length; i++)
+    //         {
+    //             if(i %2 != 0 && vettorino[i] %  2 !=0)
+    //             {
+    //                 somma2 += vettorino[i];
+    //             }
+    //         }
+    // Console.WriteLine($"La somma degli elementi in posizione dispari e che sono dispari è: {somma2}");
+
+    // Esercizio delle 12:22
+    // Ritorna il numero di volte che un elemento compare
+    int[] vett = { 1, 2, 3, 4, 5, 1, 3, 6, 2, 10 };
+    Console.Write("Inserisci un numero da cercare nel vettore: ");
+    int numeroCercato = Convert.ToInt32(Console.ReadLine());   
+    int numeroPresenze = 0;
+    string posizioni = "";
+    foreach(int numero in vett)
+        {
+            if(numero == numeroCercato)
+            {   
+                numeroPresenze ++;
+            }   
+        }
+    for(int i = 0; i < vett.Length; i++)
+    {
+        if(vett[i] == numeroCercato)
+        {
+            posizioni += i + " ";
+        }
+    }
+    Console.WriteLine($"Il numero cercato si trova nelle posizioni: {posizioni}");
+    Console.WriteLine($"il numero \"{numeroCercato}\" è presente {numeroPresenze} volte nel vettore.");
 
     }
 }
