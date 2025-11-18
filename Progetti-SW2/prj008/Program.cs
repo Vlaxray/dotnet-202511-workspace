@@ -79,26 +79,26 @@ public class HelloWorld
         // double media = (double)somma / vett.Length;
         // Console.WriteLine($"La media è: {media}");
 
-        bool[] vett2 = { true, false, true, true, false, false, true, false, true , false, true, false, true, false, true, false, true, true};
-        int sommaTrue = 0;
-        int sommaFalse = 0;
-        foreach(bool valore in vett2)
-        {
-            if(valore == true)
-                {
-                    Console.WriteLine("Si - valore 'true'");
-                    sommaTrue ++;
-                }
-            else
-                {
-                    Console.WriteLine("L'elemento in questa posizione i-esima è 'false'");
-                    sommaFalse ++;
-                }
-        }
-        Console.WriteLine($"Numero di valori true: {sommaTrue}");
-        Console.WriteLine($"Numero di valori false: {sommaFalse}");
-    
-    
+        // bool[] vett2 = { true, false, true, true, false, true, false, true , false, true, false, true, false, true, false, true, true};
+        // int sommaTrue = 0;
+        // int sommaFalse = 0;
+        // foreach(bool valore in vett2)
+        // {
+        //     if(valore == true)
+        //         {
+        //             Console.WriteLine("Si - valore 'true'");
+        //             sommaTrue ++;
+        //         }
+        //     else
+        //         {
+        //             Console.WriteLine("L'elemento in questa posizione i-esima è 'false'");
+        //             sommaFalse ++;
+        //         }
+        // }
+        // Console.WriteLine($"Numero di valori true: {sommaTrue}");
+        // Console.WriteLine($"Numero di valori false: {sommaFalse}");
+       
+       
 
     }
 }
