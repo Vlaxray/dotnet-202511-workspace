@@ -98,7 +98,63 @@ public class HelloWorld
         // Console.WriteLine($"Numero di valori true: {sommaTrue}");
         // Console.WriteLine($"Numero di valori false: {sommaFalse}");
        
-       
+        // false -> occupato
+        // true -> libero
+
+        // bool[] postiAlCinema = { true, false, true, true, false, true, false, true, false, true, false, true, true};
+        // foreach(bool posto in postiAlCinema)
+        //     {
+        //         Console.WriteLine(posto);
+        //     }
+        // //procedura che restituisca la prima posizione libera e la vada a occupare
+        // foreach(bool posto in postiAlCinema)
+        // {
+        //     Console.WriteLine(posto);
+        //     if(posto == true)
+        //     {
+        //         int indice = Array.IndexOf(postiAlCinema, posto);
+        //         Console.WriteLine($"Il primo posto libero è in posizione: {indice}");
+        //         postiAlCinema[indice] = false; // occupa il posto
+        //         Console.WriteLine(postiAlCinema[indice]);
+        //         break;
+        //     }
+        // }
+        // foreach(bool posto in postiAlCinema)
+        //     {
+        //         Console.WriteLine(posto);
+        //     }
+
+        // dato un vettore
+
+        // int[] elementoInteroNonCrescente = { 4, 8, 15, 11, 23, 42 };
+        // int[] elementoInteroCrescente = { 3, 4, 5, 6, 7, 8, 9 };
+
+        // bool crescente = true;
+
+        // // Controllo array 1
+        // for (int i = 0; i < elementoInteroNonCrescente.Length - 1; i++)
+        // {
+        //     if (elementoInteroNonCrescente[i] > elementoInteroNonCrescente[i + 1])
+        //     {
+        //         crescente = false;
+        //         break; 
+        //     }
+        // }
+        // Console.WriteLine(crescente ? "Array 1 è crescente" : "Array 1 non è crescente");
+
+        // // Controllo array 2
+        // crescente = true;
+        // for (int i = 0; i < elementoInteroCrescente.Length - 1; i++)
+        // {
+        //     if (elementoInteroCrescente[i] > elementoInteroCrescente[i + 1])
+        //     {
+        //         crescente = false;
+        //         break;
+        //     }
+        // }
+        // Console.WriteLine(crescente ? "Array 2 è crescente" : "Array 2 non è crescente");
+
+        
 
     }
 }
