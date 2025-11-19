@@ -12,6 +12,5 @@
             Cane cane3 = new("Alfa", "Media", 3);
             Console.WriteLine(cane3.ToString());
             cane3.MostraInformazioni();
-        
         }
     }
