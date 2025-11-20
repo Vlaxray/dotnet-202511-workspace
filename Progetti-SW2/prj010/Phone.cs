@@ -38,3 +38,7 @@ public class Phone
     } 
 } 
     // Override del metodo ToString
+    public override string ToString()
+    {
+        return $"Telefono: {Marca} - {Modello}, Prezzo: {Prezzo}, Dual Sim: {IsDualSim}";
+    }

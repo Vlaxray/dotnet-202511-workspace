@@ -10,15 +10,21 @@
             Console.WriteLine(phone2.ToString());
             
             if(phone2.Prezzo < phone1.Prezzo)
-            {
-                Console.WriteLine("Samsung costa meno di Nokia");
-                phone2.MostraInformazioni();
-            }
+                {
+                    Console.WriteLine("Samsung costa meno di Nokia");
+                    phone2.MostraInformazioni();
+                }
             else
-            {
-                Console.WriteLine("Nokia costa meno di Samsung");
-                phone1.MostraInformazioni();
-            }
-            
+                {
+                    Console.WriteLine("Nokia costa meno di Samsung");
+                    phone1.MostraInformazioni();
+                }
+            Store store = new Store();
+            store.AddPhone(new Phone());
+            store.AddPhone(new Phone());
+            store.AddPhone(new Phone());
+
+            store.StampaTuttiTelefoni();
+                       
         }
     }
