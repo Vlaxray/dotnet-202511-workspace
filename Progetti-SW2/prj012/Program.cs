@@ -22,7 +22,6 @@ public class Program
         //Cancella un ordine
         CancelOrder(randomOrder);
     }
-
     public static Order LoadRandomOrder(string path)
     {
         string[] lines = File.ReadAllLines(path);
@@ -42,4 +41,8 @@ public class Program
     {
         order.CancelOrder(); 
     }
+
+        
+    
+
 }
