@@ -19,14 +19,22 @@ public class Customer {
         this.Orders.Add(order);
     }
     public void LoadOrdersFromFile(string filePath)
-{
-    List<Order> externalOrders = OrderLoader.LoadOrdersFromFile(filePath);
-
-    foreach (Order order in externalOrders)
     {
-        Orders.Add(order);
+        List<Order> externalOrders = OrderLoader.LoadOrdersFromFile(filePath);
+
+        foreach (Order order in externalOrders)
+        {
+            Orders.Add(order);
+        }
+    
     }
-}
+    public void ShowOrders()
+    {
+        foreach (var order in Orders)
+        {
+            Console.WriteLine(order);
+        }
+    }
 }
   
  

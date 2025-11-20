@@ -30,4 +30,10 @@ public class Order {
     {
         Console.WriteLine("Your order has been cancelled.");
     }
+    public void ShowOrders(List<Order> order)
+    {
+        foreach(Order o in order){
+            Console.WriteLine(o.OrderID + " - " + o.Date + " - " + o.TotalAmount);
+        }        
+    }
 }

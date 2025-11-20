@@ -9,18 +9,16 @@ public class Program
     {
         // Crea un cliente
         Customer customer = new Customer("Giuseppe", "giuseppe32@gmail.com", "31991991991");
-
         // Carica un ordine random dal file
         Order randomOrder = LoadRandomOrder("C:/Users/valer/OneDrive/Desktop/listaOrdini.txt");
-
         // Stampa a console
         Console.WriteLine("Ordine casuale:");
         Console.WriteLine($"ID: {randomOrder.OrderID}");
         Console.WriteLine($"Data: {randomOrder.Date}");
         Console.WriteLine($"Totale: {randomOrder.TotalAmount}");
-        
         //Cancella un ordine
         CancelOrder(randomOrder);
+        customer.ShowOrders();
     }
     public static Order LoadRandomOrder(string path)
     {
@@ -41,8 +39,7 @@ public class Program
     {
         order.CancelOrder(); 
     }
-
-        
-    
+    public static void ShowOrders(Order order) {}
+   
 
 }
