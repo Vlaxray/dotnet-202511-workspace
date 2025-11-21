@@ -3,17 +3,17 @@
 Restaurant.AddMenu(new Menu());     
 Restaurant.AddWaiter(new Waiter());
 
-Restaurant r = new Restaurant();
-r.AddMenu(new Menu());
-r.AddWaiter(new Waiter());
-Waiter w = new Waiter();
-Menu m = new Menu();
-Dish d = new Dish();
-Ingredient i= new Ingredient();
+Restaurant restaurant = new Restaurant();
+restaurant.AddMenu(new Menu());
+restaurant.AddWaiter(new Waiter());
+Waiter waiter = new Waiter();
+Menu menu = new Menu();
+Dish dish = new Dish();
+Ingredient ingredient= new Ingredient();
 
-Console.WriteLine(r);
-Console.WriteLine(w);
-Console.WriteLine(m);
-Console.WriteLine(d);
-Console.WriteLine(i);
+Console.WriteLine(restaurant);
+Console.WriteLine(waiter);
+Console.WriteLine(menu);
+Console.WriteLine(dish);
+Console.WriteLine(ingredient);
 

@@ -2,17 +2,17 @@ public class Restaurant
 {
     public string Name { get; set; }
     public string Address { get; set; }
-    public List<Menu> Menus { get; set; } = new();
-    public List<Waiter> Waiters { get; set; } = new();
+    public List<Menu> Menus { get; set; } 
+    public List<Waiter> Waiters { get; set; }
 
-    public Restaurant(string name, string address, List<Menu> menus, List<Waiter> waiters)
+    public Restaurant(string name, string address)
     {   
         this.Name = name;
         this.Address = address;
-        this.Menus = menus;
-        this.Waiters = waiters;
+        this.Menus = new List<Menu>();
+        this.Waiters = new List<Waiter>();
     }
-    public Restaurant() : this("PizzeriaFranko", "via Francucci 10", new List<Menu>(), new List<Waiter>()) {}
+    public Restaurant() : this("PizzeriaFranko", "via Francucci 10") {}
    
     public void AddMenu(Menu menu)
     {
