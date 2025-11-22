@@ -1,0 +1,15 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\obj\Debug\net10.0-windows\BlackjackGUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\obj\Debug\net10.0-windows\BlackjackGUI.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\obj\Debug\net10.0-windows\BlackjackGUI.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\obj\Debug\net10.0-windows\BlackjackGUI.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\obj\Debug\net10.0-windows\BlackjackGUI.sourcelink.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\bin\Debug\net10.0-windows\BlackjackGUI.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\bin\Debug\net10.0-windows\BlackjackGUI.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\bin\Debug\net10.0-windows\BlackjackGUI.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\bin\Debug\net10.0-windows\BlackjackGUI.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\bin\Debug\net10.0-windows\BlackjackGUI.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\obj\Debug\net10.0-windows\BlackjackGUI.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\obj\Debug\net10.0-windows\refint\BlackjackGUI.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\obj\Debug\net10.0-windows\BlackjackGUI.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\obj\Debug\net10.0-windows\BlackjackGUI.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\BlackjackGUI\obj\Debug\net10.0-windows\ref\BlackjackGUI.dll
