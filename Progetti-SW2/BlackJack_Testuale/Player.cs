@@ -1,4 +1,7 @@
-﻿public class Player
+﻿using BlackJack;
+namespace BlackJack
+{
+public class Player
 {
     public Hand Hand { get; private set; }
     public string Name { get; private set; }
@@ -114,4 +117,5 @@
     {
         return $"{Name} | Bank: {Bank} | Hand: {Hand}";
     }
+}
 }

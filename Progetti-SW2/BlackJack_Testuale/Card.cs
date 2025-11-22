@@ -1,4 +1,7 @@
-﻿public class Card
+﻿using BlackJack;
+namespace BlackJack
+{
+public class Card
 {
     public int Suit { get; set; }
     public int Rank { get; set; }
@@ -53,4 +56,5 @@
     {
         return $"{Suit}{Rank}";
     }
+}
 }

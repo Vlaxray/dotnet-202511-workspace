@@ -1,5 +1,5 @@
-﻿namespace BlackJack
-{
+﻿using BlackJack;
+namespace BlackJack{
     public class Deck
     {
         private List<Card> Cards;
@@ -41,14 +41,6 @@
 
         public void Shuffle()
         {
-            Random random = new Random();
-            for (int i = 0; i < Cards.Count(); i++)
-            {
-                int j = random.Next(1, 53);
-                Card tempCard = Cards[i];
-                Cards[i] = Cards[j];
-                Cards[j] = tempCard;
-            }
             Cards.Shuffle();
         }
         public override string ToString()

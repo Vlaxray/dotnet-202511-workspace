@@ -1,4 +1,4 @@
-﻿using System;
+﻿using BlackJack;
 
 internal class Program
 {
@@ -51,13 +51,13 @@ internal class Program
             while (playerTurn)
             {
                 Console.Write("\n(H)it - (S)tand - (D)oubleDown: ");
-                string action = Console.ReadLine().ToUpper();
+                string action =(Console.ReadLine() ?? "").ToUpper();
 
                 switch (action)
                 {
                     case "H":
                         player.Hit(shoe.PickCard());
-                        shoe.RemoveCard();
+                        shoe.PickCard();
                         Console.WriteLine($"Hai pescato: {player.Hand.Card[^1]}");
                         Console.WriteLine($"Nuovo valore: {player.Hand.GetHandValue()}");
 
@@ -77,7 +77,7 @@ internal class Program
                         if (player.Bank >= player.Bet)
                         {
                             player.DoubleDown(shoe.PickCard());
-                            shoe.RemoveCard();
+                            shoe.PickCard();
                             Console.WriteLine($"Double Down! Hai pescato {player.Hand.Card[^1]}");
                         }
                         else
@@ -141,11 +141,11 @@ internal class Program
             }
 
             Console.Write("\nVuoi giocare ancora? (Y/N): ");
-            if (Console.ReadLine().ToUpper() != "Y")
+            if ((Console.ReadLine() ?? "").ToUpper() != "Y")
                 break;
 
             // Se lo shoe è quasi vuoto → reshuffle
-            if (shoe.GetShoe().Count < 52)
+            if (shoe.ShoeCards.Count < 52)
             {
                 Console.WriteLine("\nRimescolamento shoe...");
                 shoe.GenerateShoe();

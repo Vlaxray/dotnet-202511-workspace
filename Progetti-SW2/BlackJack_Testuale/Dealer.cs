@@ -1,88 +1,71 @@
-﻿using System;
-
-public class Dealer
+﻿using BlackJack;
+namespace BlackJack
 {
-    public Shoe Shoe;
-    public Hand Hand;
-    public bool IsStanding;
-    public bool IsVictor;
-
-    public Dealer()
+    public class Dealer
     {
-        Shoe = new Shoe(6);   // oppure passa il numero di mazzi da fuori
-        Shoe.GenerateShoe();
-        Shoe.Shuffle();
-        Hand = new Hand();
-        IsStanding = false;
-        IsVictor = false;
-    }
+        public Shoe Shoe { get; private set; }
+        public Hand Hand { get; private set; }
+        public bool IsStanding { get; private set; }
+        public bool IsVictor { get; private set; }
 
-    public bool CheckBusts()
-    {
-        return Hand.CheckBusts();
-    }
+        public Dealer(int decks = 6)
+        {
+            Shoe = new Shoe(decks);
+            Shoe.GenerateShoe();
+            Shoe.Shuffle();
 
-    public void DealHand()
-    {
-        Hand.Clear();
-        Hand.AddCard(Shoe.PickCard());
-        Shoe.RemoveCard();
+            Hand = new Hand();
+            IsStanding = false;
+            IsVictor = false;
+        }
 
-        Hand.AddCard(Shoe.PickCard());
-        Shoe.RemoveCard();
-    }
+        public bool CheckBusts()
+        {
+            return Hand.CheckBusts();
+        }
 
-    public Card DealCard(Hand Hand)
-    {
-        var card = Shoe.PickCard();
-        Hand.AddCard(card);
-        Shoe.RemoveCard();
-        return card;               // rimuovi dal mazzo
-    }
+        public void DealHand()
+        {
+            Hand.Clear();
+            Hand.AddCard(Shoe.PickCard());
+            Hand.AddCard(Shoe.PickCard());
+        }
 
-    public Hand GetHand()
-    {
-        return Hand;
-    }
+        public Card DealCard(Hand hand)
+        {
+            var card = Shoe.PickCard();
+            hand.AddCard(card);
+            return card;
+        }
 
-    public void Hit()
-    {
-        Hand.AddCard(Shoe.PickCard());
-        Shoe.RemoveCard();
-    }
+        public void Hit()
+        {
+            Hand.AddCard(Shoe.PickCard());
+        }
 
-    public void DealerShuffle()
-    {
-        Shoe.Shuffle();
-    }
+        public void DealerShuffle()
+        {
+            Shoe.Shuffle();
+        }
 
-    public bool GetIsVictor()
-    {
-        return IsVictor;
-    }
+        public void SetVictor(bool value)
+        {
+            IsVictor = value;
+        }
 
-    public void SetVictor(bool vic)
-    {
-        IsVictor = vic;
-    }
+        public void SetStanding(bool value)
+        {
+            IsStanding = value;
+        }
 
-    public bool GetIsStanding()
-    {
-        return IsStanding;
-    }
+        public void ClearCards()
+        {
+            Hand.Clear();
+        }
 
-    public void SetStanding(bool value)
-    {
-        IsStanding = value;
-    }
-
-    public void ClearCards()
-    {
-        Hand.Clear();
-    }
-
-    public override string ToString()
-    {
-        return $"Dealer Hand: {Hand.ToString()} | Standing: {IsStanding} | Victor: {IsVictor}";
+        public override string ToString()
+        {
+            return $"Dealer Hand: {Hand} | Standing: {IsStanding} | Victor: {IsVictor}";
+        }
     }
 }

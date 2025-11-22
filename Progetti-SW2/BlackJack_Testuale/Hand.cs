@@ -1,4 +1,6 @@
 ﻿using System.Text;
+using BlackJack;
+namespace BlackJack{
 public class Hand
 {
     public List<Card> Card { get; set; }
@@ -83,4 +85,5 @@ public class Hand
         }
         return sb.ToString();
     }
+}
 }
