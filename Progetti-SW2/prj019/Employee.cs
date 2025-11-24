@@ -9,6 +9,6 @@ public class Employee{
     public Employee() : this("Gordon Freeman", 09) {}
     
     public void GetInfo(){
-        Console.WriteLine($"Name: {FullName}, ID:{EmployeeID}");
+        Console.WriteLine($"Employee Name: {FullName}, ID:{EmployeeID}");
     }
 }

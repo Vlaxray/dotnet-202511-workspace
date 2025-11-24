@@ -14,12 +14,11 @@ transportCompany.AddEmployee(driver);
 transportCompany.AddEmployee(admin);
 admin.GenerateReport();
 driver.Drive();
+employee.GetInfo();
 
 // Output degli oggetti
 Console.WriteLine(vehicle);
-Console.WriteLine(employee);
 Console.WriteLine(route);
-Console.WriteLine(driver);
-Console.WriteLine(admin);
+
 
 

@@ -9,7 +9,7 @@ public class Admin : Employee
     {}
     public void GenerateReport()
     {
-        Console.WriteLine("Generating protocol n°1234567890");
+        Console.WriteLine("Admin: Generating protocol n°1234567890");
     }
 
 }
