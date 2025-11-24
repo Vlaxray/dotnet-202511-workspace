@@ -1,8 +1,16 @@
-﻿int[] numeri = {1,2,3,6,2,4,5,7,8};
-var numeriPari = from numero in numeri
-                 where numero % 2 == 1
-                 select numero;
-foreach (var n in numeriPari)
-{
-    Console.WriteLine(n);
-}
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+int[] numeri = { 1, 1, 1, 22, 1, 3, 3, 4 };
+// var numeriPari = from numero in numeri
+//                  where numero % 2 == 0
+//                  select numero;
+// foreach (var n in numeriPari)
+// {
+//     Console.WriteLine(n);
+// }
+int[] numeriUnici = numeri.Distinct().ToArray();
+Console.WriteLine(string.Join(",", numeriUnici));
+
