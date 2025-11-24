@@ -1,0 +1,15 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\bin\Debug\net10.0\utenteabbonato.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\bin\Debug\net10.0\utenteabbonato.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\bin\Debug\net10.0\utenteabbonato.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\bin\Debug\net10.0\utenteabbonato.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\bin\Debug\net10.0\utenteabbonato.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\obj\Debug\net10.0\utenteabbonato.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\obj\Debug\net10.0\utenteabbonato.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\obj\Debug\net10.0\utenteabbonato.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\obj\Debug\net10.0\utenteabbonato.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\obj\Debug\net10.0\utenteabbonato.sourcelink.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\obj\Debug\net10.0\utenteabbonato.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\obj\Debug\net10.0\refint\utenteabbonato.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\obj\Debug\net10.0\utenteabbonato.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\obj\Debug\net10.0\utenteabbonato.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\utenteabbonato\obj\Debug\net10.0\ref\utenteabbonato.dll
