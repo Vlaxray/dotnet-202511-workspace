@@ -48,8 +48,6 @@ public class VeicoloAMotore
     {
         this.Cilindrata = cilindrata;
     }
-    public void Stampa() { Console.WriteLine($"AnnoImmatricolazione:{AnnoImmatricolazione},Marca:{Marca},Modello:{Modello},TipoAlimentazione:{TipoAlimentazione},Cilindrata:{Cilindrata}"); }
-    
-    
-
+    public void Stampa() { Console.WriteLine($"AnnoImmatricolazione:{AnnoImmatricolazione},Marca:{Marca},Modello:{Modello},TipoAlimentazione:{TipoAlimentazione},Cilindrata:{Cilindrata}"); 
+    }
 }
