@@ -13,6 +13,10 @@
         this.LibriInPrestito = new List<Libro>();
     }
 
+    public virtual int ContaPagineInPrestito()
+    {
+        return LibriInPrestito.Sum(l => l.Pagine);
+    }
     public int MassimoPagineInPrestito
     {
         get => _massimoPagineInPrestito;
@@ -40,7 +44,9 @@
 
     public void RestituisciLibro(Libro libro)
     {
-        if (LibriInPrestito.Contains(libro))
+        if (LibriInPrestito.Count == 0)
+            return;
+        else if (LibriInPrestito.Contains(libro))
             LibriInPrestito.Remove(libro);
     }
 

@@ -6,11 +6,16 @@
         MassimoPagineInPrestito = massimoPagineInPrestito;
     }
 
-    public UtenteAbbonato() : this("UtenteGenericoJohnDoe", 10) {}
-    public bool PrendiInPrestito()
+    public UtenteAbbonato() : this("UtenteGenericoJohnDoe", 10) { }
+    public override bool PrendiInPrestito(Libro libro)
     {
-        return true;
+        if (libro is Rivista)
+        {
+            this.LibriInPrestito.Add(libro);
+            return true;
+        }
+        return base.PrendiInPrestito(libro);
     }
-    
-    
+
+
 }

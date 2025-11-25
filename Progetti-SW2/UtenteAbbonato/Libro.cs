@@ -7,8 +7,8 @@
 
     public Libro(string titolo, int pagine)
     {
-        Titolo = titolo;
-        Pagine = pagine;
+        this.Titolo = titolo;
+        this.Pagine = pagine;
     }
 
     public override string ToString()
