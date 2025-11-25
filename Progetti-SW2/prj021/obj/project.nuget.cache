@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nDEj4j9rjpw=",
+  "dgSpecHash": "spO2f7vIDCk=",
   "success": true,
   "projectFilePath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\prj021\\prj021.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\valer\\.nuget\\packages\\nunit\\4.4.0\\nunit.4.4.0.nupkg.sha512"
+  ],
   "logs": []
 }
