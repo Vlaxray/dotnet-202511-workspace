@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-int[] numeri = { 1, 1, 1, 22, 1, 3, 3, 4 };
+﻿int[] numeri = { 1, 1, 1, 22, 1, 3, 3, 4 };
 // var numeriPari = from numero in numeri
 //                  where numero % 2 == 0
 //                  select numero;
@@ -13,4 +8,3 @@ int[] numeri = { 1, 1, 1, 22, 1, 3, 3, 4 };
 // }
 int[] numeriUnici = numeri.Distinct().ToArray();
 Console.WriteLine(string.Join(",", numeriUnici));
-
