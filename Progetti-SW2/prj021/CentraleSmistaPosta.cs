@@ -26,6 +26,7 @@
             {
                 item.RitornoMittente = true;
             }
+            
         }
     }
 }
