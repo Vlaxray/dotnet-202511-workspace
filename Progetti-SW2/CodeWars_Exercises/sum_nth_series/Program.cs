@@ -1,15 +1,17 @@
 ﻿using System;
 
-public class NthSeries {
-	
-	public static string SeriesSum (int n) {
-        double somma = 0.00f;
-        for (int m=0; m < n; m++){
-            somma += n*(1 + 1/(1+3*m));
+public class NthSeries
+{
 
-            if(m==n-1){
-                return String.Format("{0:0.00}",somma);
-            }
+    public static string seriesSum(int n)
+    {
+        if (n == 0)
+            return "0.00";
+        double somma = 0.0;
+        for (int m = 0; m < n; m++)
+        {
+            somma += 1.0 / (1 + 3 * m);
         }
-	}
+        return somma.ToString("0.00");
+    }
 }
