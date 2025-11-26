@@ -1,0 +1,15 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\bin\Debug\net10.0\sum_positive.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\bin\Debug\net10.0\sum_positive.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\bin\Debug\net10.0\sum_positive.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\bin\Debug\net10.0\sum_positive.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\bin\Debug\net10.0\sum_positive.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\obj\Debug\net10.0\sum_positive.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\obj\Debug\net10.0\sum_positive.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\obj\Debug\net10.0\sum_positive.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\obj\Debug\net10.0\sum_positive.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\obj\Debug\net10.0\sum_positive.sourcelink.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\obj\Debug\net10.0\sum_positive.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\obj\Debug\net10.0\refint\sum_positive.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\obj\Debug\net10.0\sum_positive.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\obj\Debug\net10.0\sum_positive.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\sum_positive\obj\Debug\net10.0\ref\sum_positive.dll

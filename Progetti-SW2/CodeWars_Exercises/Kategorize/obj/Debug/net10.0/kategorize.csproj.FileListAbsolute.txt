@@ -1,0 +1,15 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\bin\Debug\net10.0\kategorize.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\bin\Debug\net10.0\kategorize.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\bin\Debug\net10.0\kategorize.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\bin\Debug\net10.0\kategorize.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\bin\Debug\net10.0\kategorize.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\obj\Debug\net10.0\kategorize.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\obj\Debug\net10.0\kategorize.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\obj\Debug\net10.0\kategorize.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\obj\Debug\net10.0\kategorize.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\obj\Debug\net10.0\kategorize.sourcelink.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\obj\Debug\net10.0\kategorize.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\obj\Debug\net10.0\refint\kategorize.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\obj\Debug\net10.0\kategorize.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\obj\Debug\net10.0\kategorize.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\kategorize\obj\Debug\net10.0\ref\kategorize.dll

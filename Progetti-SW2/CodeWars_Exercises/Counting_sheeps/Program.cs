@@ -11,7 +11,6 @@ public static class Kata
             if (s == true)
                 sommaPecore += 1;
         }
-
         foreach (var s in sheeps)
         {
             if (s == false)
@@ -22,8 +21,5 @@ public static class Kata
         Console.WriteLine("Il numero di pecore è: " + sommaPecore);
         Console.WriteLine("Il numero di pecore scappate da casa è: " + sommaPecoreScappateDiCasa);
         return sommaPecore;
-
-
-
     }
 }
