@@ -107,7 +107,7 @@ class Program
 
         Console.WriteLine($"{Colors.Gray}│{Colors.Reset}");
         var words = text.Split(' ');
-        var line = "";
+        var line = "";   //a
 
         foreach (var word in words)
         {
