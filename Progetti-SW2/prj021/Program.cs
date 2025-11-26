@@ -1,9 +1,5 @@
 ﻿using System;
 
-internal class Program
-{
-    static void Main(string[] args)
-    {
         // Creazione lettere
         Lettera l1 = new Lettera("Mario", "Luca");                         // priorità 0
         LetteraPrioritaria l2 = new LetteraPrioritaria("Anna", "Paolo", 3);
@@ -29,5 +25,5 @@ internal class Program
         Console.WriteLine(l2);
         Console.WriteLine(l3);
         Console.WriteLine(l4);
-    }
-}
+    
+
