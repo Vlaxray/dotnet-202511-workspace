@@ -1,0 +1,15 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\bin\Debug\net10.0\is_isogram.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\bin\Debug\net10.0\is_isogram.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\bin\Debug\net10.0\is_isogram.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\bin\Debug\net10.0\is_isogram.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\bin\Debug\net10.0\is_isogram.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\obj\Debug\net10.0\is_isogram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\obj\Debug\net10.0\is_isogram.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\obj\Debug\net10.0\is_isogram.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\obj\Debug\net10.0\is_isogram.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\obj\Debug\net10.0\is_isogram.sourcelink.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\obj\Debug\net10.0\is_isogram.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\obj\Debug\net10.0\refint\is_isogram.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\obj\Debug\net10.0\is_isogram.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\obj\Debug\net10.0\is_isogram.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\codewars_exercises\is_isogram\obj\Debug\net10.0\ref\is_isogram.dll
