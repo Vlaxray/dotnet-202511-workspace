@@ -1,0 +1,15 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\bin\Debug\net10.0\counting_sheeps.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\bin\Debug\net10.0\counting_sheeps.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\bin\Debug\net10.0\counting_sheeps.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\bin\Debug\net10.0\counting_sheeps.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\bin\Debug\net10.0\counting_sheeps.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\obj\Debug\net10.0\counting_sheeps.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\obj\Debug\net10.0\counting_sheeps.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\obj\Debug\net10.0\counting_sheeps.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\obj\Debug\net10.0\counting_sheeps.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\obj\Debug\net10.0\counting_sheeps.sourcelink.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\obj\Debug\net10.0\counting_sheeps.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\obj\Debug\net10.0\refint\counting_sheeps.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\obj\Debug\net10.0\counting_sheeps.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\obj\Debug\net10.0\counting_sheeps.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\counting_sheeps\obj\Debug\net10.0\ref\counting_sheeps.dll
