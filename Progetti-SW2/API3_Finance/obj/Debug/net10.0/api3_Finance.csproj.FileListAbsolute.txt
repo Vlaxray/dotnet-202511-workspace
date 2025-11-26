@@ -1,0 +1,15 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\bin\Debug\net10.0\api3_Finance.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\bin\Debug\net10.0\api3_Finance.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\bin\Debug\net10.0\api3_Finance.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\bin\Debug\net10.0\api3_Finance.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\bin\Debug\net10.0\api3_Finance.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\obj\Debug\net10.0\api3_Finance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\obj\Debug\net10.0\api3_Finance.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\obj\Debug\net10.0\api3_Finance.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\obj\Debug\net10.0\api3_Finance.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\obj\Debug\net10.0\api3_Finance.sourcelink.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\obj\Debug\net10.0\api3_Finance.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\obj\Debug\net10.0\refint\api3_Finance.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\obj\Debug\net10.0\api3_Finance.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\obj\Debug\net10.0\api3_Finance.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\api3_Finance\obj\Debug\net10.0\ref\api3_Finance.dll

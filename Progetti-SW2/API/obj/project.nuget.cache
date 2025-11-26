@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "JHi1EPJ00n0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\API\\API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.4\\microsoft.netcore.platforms.3.1.4.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\scottplot\\4.1.61\\scottplot.4.1.61.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\scottplot.winforms\\4.1.61\\scottplot.winforms.4.1.61.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\system.drawing.common\\4.7.2\\system.drawing.common.4.7.2.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.22\\microsoft.netcore.app.host.win-x64.8.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}
