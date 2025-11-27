@@ -16,3 +16,7 @@ C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\r
 C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\RestSherpa\bin\Debug\net10.0\RestSharp.dll
 C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\RestSherpa\obj\Debug\net10.0\restsherpa.csproj.AssemblyReference.cache
 C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\RestSherpa\obj\Debug\net10.0\restsherpa.csproj.Up2Date
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\RestSherpa\bin\Debug\net10.0\nunit.framework.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\RestSherpa\bin\Debug\net10.0\nunit.framework.legacy.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\RestSherpa\obj\Debug\net10.0\restsherpa.gentestingplatformentrypointinputcache.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\RestSherpa\obj\Debug\net10.0\restsherpa.genautoregisteredextensionsinputcache.cache

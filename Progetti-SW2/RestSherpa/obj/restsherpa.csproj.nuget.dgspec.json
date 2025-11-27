@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\RestSherpa\\restsherpa.csproj": {}
+    "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\RestSherpa\\RestSherpa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\RestSherpa\\restsherpa.csproj": {
+    "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\RestSherpa\\RestSherpa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\RestSherpa\\restsherpa.csproj",
-        "projectName": "restsherpa",
-        "projectPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\RestSherpa\\restsherpa.csproj",
+        "projectUniqueName": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\RestSherpa\\RestSherpa.csproj",
+        "projectName": "RestSherpa",
+        "projectPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\RestSherpa\\RestSherpa.csproj",
         "packagesPath": "C:\\Users\\valer\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\RestSherpa\\obj\\",
         "projectStyle": "PackageReference",
@@ -44,6 +44,18 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[18.0.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
             "RestSharp": {
               "target": "Package",
               "version": "[112.1.1-alpha.0.19, )"

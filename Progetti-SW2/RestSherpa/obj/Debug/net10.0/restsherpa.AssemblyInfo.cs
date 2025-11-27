@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("restsherpa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ccee2838dc840eb53b5f06dc3d4e34bd567524b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55ae38860427e02c39b651422e84e79931be75ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("restsherpa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("restsherpa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
