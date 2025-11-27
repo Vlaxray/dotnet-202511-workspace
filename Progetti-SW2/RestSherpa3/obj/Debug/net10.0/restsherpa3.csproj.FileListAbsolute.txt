@@ -13,3 +13,6 @@ C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\r
 C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\restsherpa3.pdb
 C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\restsherpa3.genruntimeconfig.cache
 C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\ref\restsherpa3.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\RestSherpa3\bin\Debug\net10.0\RestSharp.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\RestSherpa3\obj\Debug\net10.0\restsherpa3.csproj.AssemblyReference.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\RestSherpa3\obj\Debug\net10.0\restsher.16571351.Up2Date
