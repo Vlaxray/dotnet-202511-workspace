@@ -1,0 +1,15 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\bin\Debug\net10.0\restsherpa3.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\bin\Debug\net10.0\restsherpa3.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\bin\Debug\net10.0\restsherpa3.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\bin\Debug\net10.0\restsherpa3.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\bin\Debug\net10.0\restsherpa3.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\restsherpa3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\restsherpa3.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\restsherpa3.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\restsherpa3.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\restsherpa3.sourcelink.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\restsherpa3.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\refint\restsherpa3.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\restsherpa3.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\restsherpa3.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\restsherpa3\obj\Debug\net10.0\ref\restsherpa3.dll
