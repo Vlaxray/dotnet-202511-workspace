@@ -1,0 +1,15 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\bin\Debug\net10.0\AreaOrPerimeter.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\bin\Debug\net10.0\AreaOrPerimeter.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\bin\Debug\net10.0\AreaOrPerimeter.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\bin\Debug\net10.0\AreaOrPerimeter.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\bin\Debug\net10.0\AreaOrPerimeter.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\obj\Debug\net10.0\AreaOrPerimeter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\obj\Debug\net10.0\AreaOrPerimeter.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\obj\Debug\net10.0\AreaOrPerimeter.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\obj\Debug\net10.0\AreaOrPerimeter.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\obj\Debug\net10.0\AreaOrPerimeter.sourcelink.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\obj\Debug\net10.0\AreaOrPerimeter.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\obj\Debug\net10.0\refint\AreaOrPerimeter.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\obj\Debug\net10.0\AreaOrPerimeter.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\obj\Debug\net10.0\AreaOrPerimeter.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\AreaOrPerimeter\obj\Debug\net10.0\ref\AreaOrPerimeter.dll

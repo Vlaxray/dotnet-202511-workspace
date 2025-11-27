@@ -1,2 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿public class Kata
+{
+    public static string RemoveExclamationMarks(string s)
+    {
+        foreach (char c in s)
+        {
+            if (c == '!')
+            {
+                s = s.Replace("!", "");
+            }
+        }
+        return s;
+
+    }
+}
