@@ -1,0 +1,15 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\bin\Debug\net10.0\remove_ex.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\bin\Debug\net10.0\remove_ex.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\bin\Debug\net10.0\remove_ex.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\bin\Debug\net10.0\remove_ex.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\bin\Debug\net10.0\remove_ex.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\obj\Debug\net10.0\remove_ex.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\obj\Debug\net10.0\remove_ex.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\obj\Debug\net10.0\remove_ex.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\obj\Debug\net10.0\remove_ex.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\obj\Debug\net10.0\remove_ex.sourcelink.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\obj\Debug\net10.0\remove_ex.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\obj\Debug\net10.0\refint\remove_ex.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\obj\Debug\net10.0\remove_ex.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\obj\Debug\net10.0\remove_ex.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\remove_ex\obj\Debug\net10.0\ref\remove_ex.dll

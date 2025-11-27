@@ -1,0 +1,15 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\bin\Debug\net10.0\double_char.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\bin\Debug\net10.0\double_char.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\bin\Debug\net10.0\double_char.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\bin\Debug\net10.0\double_char.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\bin\Debug\net10.0\double_char.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\obj\Debug\net10.0\double_char.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\obj\Debug\net10.0\double_char.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\obj\Debug\net10.0\double_char.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\obj\Debug\net10.0\double_char.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\obj\Debug\net10.0\double_char.sourcelink.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\obj\Debug\net10.0\double_char.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\obj\Debug\net10.0\refint\double_char.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\obj\Debug\net10.0\double_char.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\obj\Debug\net10.0\double_char.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\CodeWars_Exercises\double_char\obj\Debug\net10.0\ref\double_char.dll
