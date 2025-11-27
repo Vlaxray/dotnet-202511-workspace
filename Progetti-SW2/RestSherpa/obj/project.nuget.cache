@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "T5ZjmQ2qZfk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\RestSherpa\\restsherpa.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\valer\\.nuget\\packages\\restsharp\\112.1.1-alpha.0.19\\restsharp.112.1.1-alpha.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}
