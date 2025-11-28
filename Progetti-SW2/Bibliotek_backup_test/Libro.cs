@@ -1,20 +1,18 @@
-﻿public class Libro
-{
-    public string Isbn { get; set; }
-    public string Titolo { get; set; }
-    public string Autore { get; set; }
-    public int Anno_Pubblicazione { get; set; }
-    public Stato stato { get; set; }
-
-    public DateTime? DataScadenza { get; private set; } // data di scadenza prenotazione
-
-    public enum Stato
+﻿ public enum Stato
     {
         Disponibile,
         Prenotata,
         InPrestito
     }
+public class Libro
+{
+    private string Isbn { get; set; }
+    private string Titolo { get; set; }
+    private string Autore { get; set; }
+    private int Anno_Pubblicazione { get; set; }
+    private Stato stato { get; set; }
 
+    private DateTime? DataScadenza { get; private set; } // data di scadenza prenotazione
     public Libro(string isbn, string titolo, string autore, int anno_pubblicazione, Stato Stato)
     {
         this.Isbn = isbn;
@@ -23,7 +21,6 @@
         this.Anno_Pubblicazione = anno_pubblicazione;
         this.stato = Stato;
     }
-
     public Libro() : this("", "", "", 0, Stato.Disponibile) { }
 
     // Metodo per prenotare il libro

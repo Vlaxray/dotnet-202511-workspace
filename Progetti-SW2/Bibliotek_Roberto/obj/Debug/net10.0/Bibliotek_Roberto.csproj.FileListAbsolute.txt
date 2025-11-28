@@ -1,0 +1,5 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Bibliotek_Roberto\obj\Debug\net10.0\Bibliotek_Roberto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Bibliotek_Roberto\obj\Debug\net10.0\Bibliotek_Roberto.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Bibliotek_Roberto\obj\Debug\net10.0\Bibliotek_Roberto.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Bibliotek_Roberto\obj\Debug\net10.0\Bibliotek_Roberto.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Bibliotek_Roberto\obj\Debug\net10.0\Bibliotek_Roberto.sourcelink.json
