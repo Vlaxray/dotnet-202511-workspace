@@ -1,0 +1,15 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\bin\Debug\net10.0\Printer_Errors.exe
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\bin\Debug\net10.0\Printer_Errors.deps.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\bin\Debug\net10.0\Printer_Errors.runtimeconfig.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\bin\Debug\net10.0\Printer_Errors.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\bin\Debug\net10.0\Printer_Errors.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\obj\Debug\net10.0\Printer_Errors.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\obj\Debug\net10.0\Printer_Errors.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\obj\Debug\net10.0\Printer_Errors.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\obj\Debug\net10.0\Printer_Errors.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\obj\Debug\net10.0\Printer_Errors.sourcelink.json
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\obj\Debug\net10.0\Printer_Errors.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\obj\Debug\net10.0\refint\Printer_Errors.dll
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\obj\Debug\net10.0\Printer_Errors.pdb
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\obj\Debug\net10.0\Printer_Errors.genruntimeconfig.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\Printer_Errors\obj\Debug\net10.0\ref\Printer_Errors.dll
