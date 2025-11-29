@@ -1,6 +1,6 @@
 ﻿
 using NUnit.Framework;
-public class Tests
+public class Tests_1_Esercizio
 {
     [SetUp]
     public void Setup()
@@ -8,7 +8,7 @@ public class Tests
         // Codice da eseguire prima di ogni test
     }
     
-    [Test]
+    [Test] // Test Attributi
     public void Test1()
     {
         Esercizio e = new Esercizio();
@@ -27,18 +27,27 @@ public class Tests
         e.Attrezzatura = "2x24Kg";
         Assert.That(e.Attrezzatura, Is.EqualTo("2x24Kg"));
     }
-    [Test]
+    [Test] // Test Metodi
     public void TestMetodiInEsercizio()
     {
         Esercizio e2 = new Esercizio();
         e2.Serie = 15;
         e2.Ripetizioni = 12;
-        
         e2.CalcolaCaricoLavoro();
         Assert.That(e2.Tonnellaggio, Is.EqualTo(180));
-        
-        string difficolta = e2.VerificaDifficolta();
-        Assert.That(difficolta, Is.EqualTo("difficile"));
+        string difficolta = e2.VerificaDifficolta(); //difficile
+
+        e2.Serie = 1;
+        e2.Ripetizioni = 12;
+        e2.CalcolaCaricoLavoro();
+        Assert.That(e2.Tonnellaggio, Is.EqualTo(12));
+        difficolta = e2.VerificaDifficolta(); //facile
+
+        e2.Serie = 5;
+        e2.Ripetizioni = 10;
+        e2.CalcolaCaricoLavoro();
+        Assert.That(e2.Tonnellaggio, Is.EqualTo(50));
+        difficolta = e2.VerificaDifficolta(); //media
         
         var istruzioni_test= e2.GetIstruzioni();
         Assert.That(istruzioni_test, Is.EqualTo("Slancio a ritmo 14 reps per 1 minuto recupero 1 minuto e mezzo per 14 serie con 2 kettlebell da 24 kg"));
