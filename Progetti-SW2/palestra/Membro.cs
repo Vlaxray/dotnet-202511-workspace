@@ -8,6 +8,7 @@
     private DateTime _dataIscrizione;
     private DateTime _dataNascita;
     private SchedaAllenamento _schedaAllenamento;
+    private Abbonamento _abbonamento;
     ///*******//////////////////*********/////////////*********//////////////////////*****
     public int Id { get => _id; set => _id = value; }
     public string Name { get => _name; set => _name = value; }
@@ -17,6 +18,7 @@
     public DateTime DataIscrizione { get => _dataIscrizione; set => _dataIscrizione = value; }
     public DateTime DataNascita { get => _dataNascita; set => _dataNascita = value; }
     public SchedaAllenamento SchedaAllenamento { get => _schedaAllenamento; set => _schedaAllenamento = value; }
+    public Abbonamento Abbonamento { get => _abbonamento; set => _abbonamento = value; }
     ///*******//////////////////*********/////////////*********//////////////////////*****
     public Membro(int id, string name, string cognome, string email, string telefono, DateTime dataiscrizione, DateTime datanascita)
     {
@@ -27,6 +29,8 @@
         this._telefono = telefono;
         this._dataIscrizione = dataiscrizione;
         this._dataNascita = datanascita;
+        this._abbonamento = new Abbonamento();
+        this._schedaAllenamento = new SchedaAllenamento();
     }
     public Membro() : this(1, "", "", "", "", DateTime.Now, DateTime.Now) { }
     ///*******//////////////////*********/////////////*********//////////////////////*****
