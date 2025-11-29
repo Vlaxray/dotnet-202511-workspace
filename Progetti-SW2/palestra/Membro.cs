@@ -9,6 +9,7 @@
     private DateTime _dataNascita;
     private SchedaAllenamento _schedaAllenamento;
     private Abbonamento _abbonamento;
+    private Notifica _notifica;
     ///*******//////////////////*********/////////////*********//////////////////////*****
     public int Id { get => _id; set => _id = value; }
     public string Name { get => _name; set => _name = value; }
@@ -19,6 +20,7 @@
     public DateTime DataNascita { get => _dataNascita; set => _dataNascita = value; }
     public SchedaAllenamento SchedaAllenamento { get => _schedaAllenamento; set => _schedaAllenamento = value; }
     public Abbonamento Abbonamento { get => _abbonamento; set => _abbonamento = value; }
+    public Notifica Notifica { get => _notifica; set => _notifica = value; } 
     ///*******//////////////////*********/////////////*********//////////////////////*****
     public Membro(int id, string name, string cognome, string email, string telefono, DateTime dataiscrizione, DateTime datanascita)
     {
@@ -31,6 +33,7 @@
         this._dataNascita = datanascita;
         this._abbonamento = new Abbonamento();
         this._schedaAllenamento = new SchedaAllenamento();
+        this._notifica = new Notifica();
     }
     public Membro() : this(1, "", "", "", "", DateTime.Now, DateTime.Now) { }
     ///*******//////////////////*********/////////////*********//////////////////////*****
@@ -56,5 +59,9 @@
             return true;
         else
             return false;
+    }
+    public override string ToString()
+    {
+        return $"{_id}\t{_name}\t{_cognome}\t{_email}\t{_telefono}\t{_abbonamento.ToString()}\t{_schedaAllenamento.ToString()}\t{_notifica.ToString()}";
     }
 }

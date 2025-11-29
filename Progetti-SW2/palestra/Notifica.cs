@@ -29,6 +29,7 @@ public class Notifica
         if (DateTime.Now.Day == 12)
         {
             Console.WriteLine(TipoNotifica.PromemoriaPagamento);
+
         }
         return true;
 

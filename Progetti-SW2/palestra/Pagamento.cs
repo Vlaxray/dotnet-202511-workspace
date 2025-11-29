@@ -8,12 +8,14 @@ public class Pagamento
     private string _metodoPagamento;
     private bool _pagato;
     private Abbonamento? _abbonamento;
+    private Notifica _notifica;
     ///*******//////////////////*********/////////////*********//////////////////////*****
     public int Id { get => _id; set => _id = value; }
     public DateTime Data { get => _data; set => _data = value; }
     public decimal Importo { get => _importo; set => _importo = value; }
     public string MetodoPagamento { get => _metodoPagamento; set => _metodoPagamento = value; }
     public bool Pagato { get => _pagato; set => _pagato = value; }
+    public Notifica Notifica { get => _notifica; set => _notifica = value;}
     public Abbonamento Abbonamento
     {
         get { return _abbonamento; }
@@ -34,6 +36,7 @@ public class Pagamento
         this._metodoPagamento = metodoPagamento;
         this._pagato = pagato;
         this._abbonamento = abbonamento;
+        this._notifica = Notifica;
     }
     public Pagamento() : this(0, DateTime.Now, 0.0m, "", false, null) { }
     ///*******//////////////////*********/////////////*********//////////////////////*****
