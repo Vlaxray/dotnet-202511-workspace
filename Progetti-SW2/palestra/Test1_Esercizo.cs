@@ -1,10 +1,5 @@
-﻿using Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter;
+﻿
 using NUnit.Framework;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 public class Tests
 {
     [SetUp]
@@ -12,11 +7,12 @@ public class Tests
     {
         // Codice da eseguire prima di ogni test
     }
+    
     [Test]
     public void Test1()
     {
-        Esercizio e = new Esercizio(); 
-        e.Id = 2;//2, "Slancio", "Slancio con due Kb", 10, 20, 90, "2x24Kg");
+        Esercizio e = new Esercizio();
+        e.Id = 2;
         Assert.That(e.Id, Is.EqualTo(2));
         e.Nome = "Slancio";
         Assert.That(e.Nome, Is.EqualTo("Slancio"));
@@ -32,13 +28,19 @@ public class Tests
         Assert.That(e.Attrezzatura, Is.EqualTo("2x24Kg"));
     }
     [Test]
- public void TestMetodi(){
-
-    
-    Esercizio e2 = new Esercizio();
-    e2.Serie = 15;
-    e2.Ripetizioni = 12;
-    Assert.That(e2.Id, Is.EqualTo(3));
+    public void TestMetodiInEsercizio()
+    {
+        Esercizio e2 = new Esercizio();
+        e2.Serie = 15;
+        e2.Ripetizioni = 12;
+        
+        e2.CalcolaCaricoLavoro();
+        Assert.That(e2.Tonnellaggio, Is.EqualTo(180));
+        
+        string difficolta = e2.VerificaDifficolta();
+        Assert.That(difficolta, Is.EqualTo("difficile"));
+        
+        var istruzioni_test= e2.GetIstruzioni();
+        Assert.That(istruzioni_test, Is.EqualTo("Slancio a ritmo 14 reps per 1 minuto recupero 1 minuto e mezzo per 14 serie con 2 kettlebell da 24 kg"));
+    }
 }
-}
-
