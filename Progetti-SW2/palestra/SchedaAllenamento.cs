@@ -18,7 +18,7 @@
         this._id = id;
         this._obbiettivi = obbiettivi;
         this._dataCreazione = dataCreazione;
-        this._livello = _livello;
+        this._livello = Livello;
         this._esercizi = esercizi;
     }
     public SchedaAllenamento() : this(1, "Gara", DateTime.Now, Livello.Principiante, new List<Esercizio>()) { }
