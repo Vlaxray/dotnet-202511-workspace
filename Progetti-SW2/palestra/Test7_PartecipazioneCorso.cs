@@ -1,3 +1,4 @@
+using System.Reflection.PortableExecutable;
 using NUnit.Framework;
 
 
@@ -33,6 +34,23 @@ public class Test7_PartecipazioneCorso
         Assert.That(pc.Corso, Is.EqualTo(corso));
 
     }
+    [Test]
+    public void VerificaFrequenza_RitornaValoreCorretto()
+    {
+        var pc = new PartecipazioneCorso();
+        pc.Data = new DateTime(2024, 5, 10);
 
+        double frequenza = pc.VerificaFrequenza();
+
+        Assert.That(frequenza, Is.EqualTo(2024 / 12.0));
+    }
+    [Test]
+    public void RegistraPresenza_NonGeneraEccezioni()
+    {
+        var pc = new PartecipazioneCorso(1, DateTime.Now, true, null, null);
+
+        Assert.DoesNotThrow(() => pc.RegistraPresenza());
+    }
 }
+
 

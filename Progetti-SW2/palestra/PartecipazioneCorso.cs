@@ -30,7 +30,7 @@ public class PartecipazioneCorso
         frequenza +=1;
         if (this.Presente==true)
         {
-        Console.WriteLine($"Il membro {_membro.Name} è stato registrato alle ore {DateTime.Now.ToString("HH:mm")}come presente al corso {_corso.XXXXXXXXXXXXXXXXXX}");
+        Console.WriteLine($"Il membro {_membro.Name} è stato registrato alle ore {DateTime.Now.ToString("HH:mm")}come presente al corso {_corso.ToString()}");
         frequenza +=1;
         }
     }
