@@ -9,6 +9,7 @@ public class Corso
     private int _maxPartecipanti;
     private List<PartecipazioneCorso> _partecipazioni;
     private int _postiOccupati;
+    private Istruttore _istruttore;
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public int ID { get => _id; set => _id = value; }
     public string Nome { get => _nome; set => _nome = value; }
@@ -18,6 +19,7 @@ public class Corso
     public int MaxPartecipanti { get => _maxPartecipanti; set => _maxPartecipanti = value; }
     public List<PartecipazioneCorso> Partecipazioni { get => _partecipazioni; set => _partecipazioni = value; }
     public int PostiOccupati { get => _postiOccupati; set => _postiOccupati = value; }
+    public Istruttore  istruttori { get => _istruttore; set => _istruttore = value; } 
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public Corso(int id, string nome, string descrizione, string orario, int durataMinuti, int maxPartecipanti)
     {
@@ -29,6 +31,7 @@ public class Corso
         this._maxPartecipanti = maxPartecipanti;
         this._partecipazioni = new List<PartecipazioneCorso>();
         this._postiOccupati = PostiOccupati;
+        this._istruttore = istruttori;  
     }
     public Corso() : this(0, "", "", "", 0, 0) { }
     ////////////////////////////////////////////////////////////////////////////////////
