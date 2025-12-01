@@ -11,7 +11,7 @@ public class Corso
     private int _postiOccupati;
     private Istruttore _istruttore;
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public int ID { get => _id; set => _id = value; }
+    public int Id { get => _id; set => _id = value; }
     public string Nome { get => _nome; set => _nome = value; }
     public string Descrizione { get => _descrizione; set => _descrizione = value; }
     public string Orario { get => _orario; set => _orario = value; }

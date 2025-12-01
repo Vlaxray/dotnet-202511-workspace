@@ -18,7 +18,7 @@ namespace TestPalestra
         {
             var c1 = new Corso(1, "Yoga", "Lezione di yoga", "10:00", 60, 2);
 
-            Assert.That(c1.ID, Is.EqualTo(1));
+            Assert.That(c1.Id, Is.EqualTo(1));
             Assert.That(c1.Nome, Is.EqualTo("Yoga"));
             Assert.That(c1.Descrizione, Is.EqualTo("Lezione di yoga"));
             Assert.That(c1.Orario, Is.EqualTo("10:00"));

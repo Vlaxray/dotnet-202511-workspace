@@ -24,7 +24,6 @@ public class Abbonamento
         this._dataScadenza = dataScadenza;
         this._prezzo = prezzo;
         this._pagamenti = new List<Pagamento>();
-        
     }
     public Abbonamento() : this(0, TipoAbbonamento.VIP, DateTime.Now, null, 0.00m) { }
     ///*******//////////////////*********/////////////*********//////////////////////**

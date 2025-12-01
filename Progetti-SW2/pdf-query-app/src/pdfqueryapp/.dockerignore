@@ -1,0 +1,9 @@
+# Nella cartella pdf-query-app, crea .dockerignore
+echo "bin/
+obj/
+.DS_Store
+.vscode/
+*.user
+*.suo
+*.db
+*.pdf" > .dockerignore

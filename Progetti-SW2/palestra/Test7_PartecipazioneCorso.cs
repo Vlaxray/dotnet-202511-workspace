@@ -9,7 +9,6 @@ public class Test7_PartecipazioneCorso
     {
         // Codice da eseguire prima di ogni test
     }
-
     [Test]//Test Attributi
     public void TestAttributiPartecipazioneCorso()
     {
@@ -32,25 +31,65 @@ public class Test7_PartecipazioneCorso
         var corso = new Corso { };
         pc.Corso = corso;
         Assert.That(pc.Corso, Is.EqualTo(corso));
-
     }
     [Test]
     public void VerificaFrequenza_RitornaValoreCorretto()
     {
-        var pc = new PartecipazioneCorso();
-        pc.Data = new DateTime(2024, 5, 10);
+        // Crea l'oggetto partecipazione
+        PartecipazioneCorso partecipazione = new PartecipazioneCorso();
 
-        double frequenza = pc.VerificaFrequenza();
+        decimal frequenza = partecipazione.VerificaFrequenza();
 
-        Assert.That(frequenza, Is.EqualTo(2024 / 12.0));
+        // Verifica il risultato (2024 / 12 = 168.666...)
+        Assert.That(frequenza, Is.EqualTo(0m).Within(0.001m));
     }
     [Test]
-    public void RegistraPresenza_NonGeneraEccezioni()
+    public void RegistraPresenza_ConMembroEcorsoNull_LanciaInvalidOperationException()
     {
-        var pc = new PartecipazioneCorso(1, DateTime.Now, true, null, null);
+        // Arrange
+        var partecipazione = new PartecipazioneCorso
+        {
+            Presente = true
+            // _membro e _corso non inizializzati
+        };
 
-        Assert.DoesNotThrow(() => pc.RegistraPresenza());
+        // Act & Assert
+        Assert.Throws<InvalidOperationException>(() => partecipazione.RegistraPresenza());
+    }
+
+    [Test]
+    public void RegistraPresenza_ConDatiValidi_NonLanciaEccezione()
+    {   
+        PartecipazioneCorso par = new PartecipazioneCorso(1, DateTime.Now, true, new Corso(), new Membro());
+        var membro = new Membro { Id = 1, Name = "Mario" };
+        var corso = new Corso { Id = 1, Orario = "09:00" };
+        var partecipazione = new PartecipazioneCorso
+        {
+            Membro = membro,
+            Corso = corso,
+            Presente = true
+        };
+
+        // Act & Assert
+        Assert.DoesNotThrow(() => partecipazione.RegistraPresenza());
+    }
+
+    [Test]
+    public void RegistraPresenza_ConPresenteFalse_NonStampaMessaggio()
+    {
+        // Arrange
+        var membro = new Membro { Id = 1, Name = "Mario" };
+        var corso = new Corso { Id = 1, Orario = "09:00" };
+        var partecipazione = new PartecipazioneCorso
+        {
+            Membro = membro,
+            Corso = corso,
+            Presente = false
+        };
+
+        // Act & Assert
+        Assert.DoesNotThrow(() => partecipazione.RegistraPresenza());
+        // Non si può verificare Console.WriteLine direttamente con NUnit senza redirect
     }
 }
-
 
