@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PdfQueryApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cc7f9d343d36de08bd446f78e374624d893aadc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+039f5e67604cf09e347720aa4c819ea2fd7f6891")]
 [assembly: System.Reflection.AssemblyProductAttribute("PdfQueryApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PdfQueryApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
