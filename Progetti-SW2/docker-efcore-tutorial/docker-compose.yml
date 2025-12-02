@@ -1,0 +1,47 @@
+services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sql-server-db
+    environment:
+      SA_PASSWORD: "YourStrong!Passw0rd123"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Express"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql-data:/var/opt/mssql
+    # Healthcheck semplificato
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P "YourStrong!Passw0rd123" -Q "SELECT 1" -b -o /dev/null
+      interval: 10s
+      retries: 20
+      start_period: 60s
+      timeout: 3s
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: efcore-app
+    depends_on:
+      sql-server:
+        condition: service_healthy
+    environment:
+      - DB_CONNECTION_STRING=Server=sql-server;Database=BlogDb;User Id=sa;Password=YourStrong!Passw0rd123;TrustServerCertificate=True;MultipleActiveResultSets=true;Encrypt=false
+    command: >
+      sh -c "echo 'Starting application...' &&
+             sleep 10 &&
+             dotnet docker-efcore-tutorial.dll"
+    networks:
+      - app-network
+    restart: on-failure
+
+volumes:
+  sql-data:
+
+networks:
+  app-network:
+    driver: bridge
