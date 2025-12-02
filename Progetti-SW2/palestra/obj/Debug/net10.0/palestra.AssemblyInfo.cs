@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("palestra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+796f0d46e168c5becfc85e8d4095cd51c132d2c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97c9e0e85e74e65694c738edb8b996aeb877abc0")]
 [assembly: System.Reflection.AssemblyProductAttribute("palestra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("palestra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
