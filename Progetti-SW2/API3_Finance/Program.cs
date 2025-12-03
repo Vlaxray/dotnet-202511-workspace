@@ -224,7 +224,7 @@ class Program
             {
                 var item = new Output_Pocho
                 {
-                    Symbol = symbol,
+                    
                     Sector = profile.Sector,
                     Industry = profile.Industry,
                     Location =profile.City, 
