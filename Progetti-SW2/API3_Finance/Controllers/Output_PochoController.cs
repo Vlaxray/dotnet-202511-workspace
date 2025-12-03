@@ -8,7 +8,7 @@ public class Output_PochoController : ControllerBase
 
     public Output_PochoController(ApplicationDbContext context)
     {
-        _context = context; // qui basta assegnare
+        _context = context;
     }
 
     [HttpPost]
@@ -17,9 +17,17 @@ public class Output_PochoController : ControllerBase
         if (model == null)
             return BadRequest("Il modello non può essere nullo.");
 
-        _context.Output_Pochos.Add(model);
-        await _context.SaveChangesAsync(); // qui salvi davvero
+        _context.Output_Pochos.Add(model);  // prepara il record
+        await _context.SaveChangesAsync();  // scrive nel database
 
         return Ok(model);
+    }
+
+    // GET: api/<Output_PochoController>
+    [HttpGet]
+    public IEnumerable<Output_Pocho> Get()
+    {
+        var outputPochos = _context.Output_Pochos.ToList();
+        return outputPochos;
     }
 }

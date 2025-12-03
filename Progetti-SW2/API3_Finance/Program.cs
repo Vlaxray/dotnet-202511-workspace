@@ -110,7 +110,7 @@ class Program
 
         Console.WriteLine($"{Colors.Gray}│{Colors.Reset}");
         var words = text.Split(' ');
-        var line = "";   //a
+        var line = "";
 
         foreach (var word in words)
         {
@@ -133,17 +133,19 @@ class Program
 
     static void PrintFooter()
     {
-        Console.WriteLine($"{Colors.Yellow}{Colors.Bold}└{'─', 78}┘{Colors.Reset}\n");
+        Console.WriteLine($"{Colors.Yellow}{Colors.Bold}└────────────────────────────────────────────────────────────────────────────┘{Colors.Reset}\n");
     }
 
-    static async Task Main()
+    static async Task Main(string[] args)
     {
+        // Configurazione
         var configuration = new ConfigurationBuilder()
             .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
             .Build();
 
         var services = new ServiceCollection();
         var connectionString = configuration.GetConnectionString("DefaultConnection");
+        
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
@@ -218,48 +220,59 @@ class Program
                     PrintDescription(profile.LongBusinessSummary);
                     PrintFooter();
 
-            Console.WriteLine($"{Colors.Green}{Colors.Bold}✓ Dati recuperati con successo!{Colors.Reset}\n");
+                    Console.WriteLine($"{Colors.Green}{Colors.Bold}✓ Dati recuperati con successo!{Colors.Reset}\n");
 
-            using (var db = serviceProvider.GetRequiredService<ApplicationDbContext>())
-            {
-                var item = new Output_Pocho
+                    // SALVATAGGIO NEL DATABASE
+                    try
+                    {
+                        using (var scope = serviceProvider.CreateScope())
+                        {
+                            var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+                            
+                            var item = new Output_Pocho
+                            {
+                                Symbol = symbol,
+                                Sector = profile.Sector ?? "N/A",
+                                Industry = profile.Industry ?? "N/A",
+                                Location = $"{profile.City}, {profile.State}, {profile.Country}",
+                                Employees = profile.FullTimeEmployees ?? 0,
+                                Website = profile.Website ?? "N/A",
+                                LongBusinessSummary = profile.LongBusinessSummary ?? "N/A"
+                            };
+
+                            db.Output_Pochos.Add(item);
+                            await db.SaveChangesAsync();
+                            
+                            Console.WriteLine($"{Colors.Green}✓ Dati salvati nel database!{Colors.Reset}");
+                        }
+                    }
+                    catch (DbUpdateException dbEx)
+                    {
+                        Console.WriteLine($"{Colors.Yellow}✗ Errore nel salvataggio: {dbEx.InnerException?.Message ?? dbEx.Message}{Colors.Reset}");
+                    }
+                }
+                else
                 {
-                    
-                    Sector = profile.Sector,
-                    Industry = profile.Industry,
-                    Location =profile.City, 
-                    Employees = profile.FullTimeEmployees ?? 0,
-                    Website = profile.Website,
-                    LongBusinessSummary = profile.LongBusinessSummary
-                };
-
-                db.Output_Pochos.Add(item);
-                db.SaveChanges();
+                    Console.WriteLine($"{Colors.Yellow}⚠ Nessun dato trovato per {symbol}.{Colors.Reset}");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"{Colors.Yellow}⚠ Nessun risultato trovato per {symbol}.{Colors.Reset}");
             }
         }
-        else
+        catch (HttpRequestException ex)
         {
-            Console.WriteLine($"{Colors.Yellow}⚠ Nessun dato trovato per {symbol}.{Colors.Reset}");
+            Console.WriteLine($"{Colors.Yellow}✗ Errore nella richiesta: {ex.Message}{Colors.Reset}");
+        }
+        catch (JsonException ex)
+        {
+            Console.WriteLine($"{Colors.Yellow}✗ Errore nel parsing JSON: {ex.Message}{Colors.Reset}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"{Colors.Yellow}✗ Errore imprevisto: {ex.Message}{Colors.Reset}");
+            Console.WriteLine($"{Colors.Gray}Dettagli: {ex}{Colors.Reset}");
         }
     }
-    else
-    {
-        Console.WriteLine($"{Colors.Yellow}⚠ Nessun risultato trovato per {symbol}.{Colors.Reset}");
-    }
-}
-catch (HttpRequestException ex)
-{
-    Console.WriteLine($"{Colors.Yellow}✗ Errore nella richiesta: {ex.Message}{Colors.Reset}");
-}
-catch (JsonException ex)
-{
-    Console.WriteLine($"{Colors.Yellow}✗ Errore nel parsing JSON: {ex.Message}{Colors.Reset}");
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"{Colors.Yellow}✗ Errore imprevisto: {ex.Message}{Colors.Reset}");
-}
-
-    }
-    
 }

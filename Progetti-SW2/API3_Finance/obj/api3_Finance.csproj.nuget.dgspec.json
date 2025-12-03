@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj": {}
+    "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\API3_Finance\\api3_Finance.csproj": {}
   },
   "projects": {
-    "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj": {
+    "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\API3_Finance\\api3_Finance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj",
+        "projectUniqueName": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\API3_Finance\\api3_Finance.csproj",
         "projectName": "api3_Finance",
-        "projectPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj",
+        "projectPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\API3_Finance\\api3_Finance.csproj",
         "packagesPath": "C:\\Users\\valer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\obj\\",
+        "outputPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\API3_Finance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\valer\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,0 +1,6 @@
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\NewApi\obj\Debug\net9.0\NewApi.csproj.AssemblyReference.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\NewApi\obj\Debug\net9.0\NewApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\NewApi\obj\Debug\net9.0\NewApi.AssemblyInfoInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\NewApi\obj\Debug\net9.0\NewApi.AssemblyInfo.cs
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\NewApi\obj\Debug\net9.0\NewApi.csproj.CoreCompileInputs.cache
+C:\Users\valer\OneDrive\Desktop\NET Corso\dotnet-202511-workspace\Progetti-SW2\NewApi\obj\Debug\net9.0\NewApi.sourcelink.json

@@ -2107,11 +2107,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj",
+      "projectUniqueName": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\API3_Finance\\api3_Finance.csproj",
       "projectName": "api3_Finance",
-      "projectPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj",
+      "projectPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\API3_Finance\\api3_Finance.csproj",
       "packagesPath": "C:\\Users\\valer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\obj\\",
+      "outputPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\API3_Finance\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\valer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2613,7 +2613,7 @@
       "code": "NU1510",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Microsoft.Extensions.Configuration PackageReference non verrà rimosso. È consigliabile rimuovere questo pacchetto dalle dipendenze, poiché è probabile che non sia necessario.",
+      "message": "PackageReference Microsoft.Extensions.Configuration will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
       "libraryId": "Microsoft.Extensions.Configuration",
       "targetGraphs": [
         "net10.0"
@@ -2623,7 +2623,7 @@
       "code": "NU1510",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Microsoft.Extensions.Configuration.Json PackageReference non verrà rimosso. È consigliabile rimuovere questo pacchetto dalle dipendenze, poiché è probabile che non sia necessario.",
+      "message": "PackageReference Microsoft.Extensions.Configuration.Json will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
       "libraryId": "Microsoft.Extensions.Configuration.Json",
       "targetGraphs": [
         "net10.0"
@@ -2633,7 +2633,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Il pacchetto 'RestSharp' 108.0.3 presenta una vulnerabilità nota di gravità moderata, https://github.com/advisories/GHSA-4rr6-2v9v-wcpc",
+      "message": "Package 'RestSharp' 108.0.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-4rr6-2v9v-wcpc",
       "libraryId": "RestSharp",
       "targetGraphs": [
         "net10.0"
