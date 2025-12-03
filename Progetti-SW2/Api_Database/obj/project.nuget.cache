@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "q1x3wDDS2y4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\Api_Database\\api_database.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\valer\\.nuget\\packages\\restsharp\\113.0.0\\restsharp.113.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

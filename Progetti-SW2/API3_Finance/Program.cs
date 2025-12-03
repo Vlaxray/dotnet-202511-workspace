@@ -3,6 +3,9 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 class Program
 {
@@ -135,6 +138,17 @@ class Program
 
     static async Task Main()
     {
+        var configuration = new ConfigurationBuilder()
+            .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            .Build();
+
+        var services = new ServiceCollection();
+        var connectionString = configuration.GetConnectionString("DefaultConnection");
+        services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+        var serviceProvider = services.BuildServiceProvider();
+
         // Banner iniziale
         Console.Clear();
         Console.WriteLine($"{Colors.Cyan}{Colors.Bold}");
@@ -204,29 +218,48 @@ class Program
                     PrintDescription(profile.LongBusinessSummary);
                     PrintFooter();
 
-                    Console.WriteLine($"{Colors.Green}{Colors.Bold}✓ Dati recuperati con successo!{Colors.Reset}\n");
-                }
-                else
-                {
-                    Console.WriteLine($"{Colors.Yellow}⚠ Nessun dato trovato per {symbol}.{Colors.Reset}");
-                }
-            }
-            else
+            Console.WriteLine($"{Colors.Green}{Colors.Bold}✓ Dati recuperati con successo!{Colors.Reset}\n");
+
+            using (var db = serviceProvider.GetRequiredService<ApplicationDbContext>())
             {
-                Console.WriteLine($"{Colors.Yellow}⚠ Nessun risultato trovato per {symbol}.{Colors.Reset}");
+                var item = new Output_Pocho
+                {
+                    Symbol = symbol,
+                    Sector = profile.Sector,
+                    Industry = profile.Industry,
+                    Location =profile.City, 
+                    Employees = profile.FullTimeEmployees ?? 0,
+                    Website = profile.Website,
+                    LongBusinessSummary = profile.LongBusinessSummary
+                };
+
+                db.Output_Pochos.Add(item);
+                db.SaveChanges();
             }
         }
-        catch (HttpRequestException ex)
+        else
         {
-            Console.WriteLine($"{Colors.Yellow}✗ Errore nella richiesta: {ex.Message}{Colors.Reset}");
-        }
-        catch (JsonException ex)
-        {
-            Console.WriteLine($"{Colors.Yellow}✗ Errore nel parsing JSON: {ex.Message}{Colors.Reset}");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"{Colors.Yellow}✗ Errore imprevisto: {ex.Message}{Colors.Reset}");
+            Console.WriteLine($"{Colors.Yellow}⚠ Nessun dato trovato per {symbol}.{Colors.Reset}");
         }
     }
+    else
+    {
+        Console.WriteLine($"{Colors.Yellow}⚠ Nessun risultato trovato per {symbol}.{Colors.Reset}");
+    }
+}
+catch (HttpRequestException ex)
+{
+    Console.WriteLine($"{Colors.Yellow}✗ Errore nella richiesta: {ex.Message}{Colors.Reset}");
+}
+catch (JsonException ex)
+{
+    Console.WriteLine($"{Colors.Yellow}✗ Errore nel parsing JSON: {ex.Message}{Colors.Reset}");
+}
+catch (Exception ex)
+{
+    Console.WriteLine($"{Colors.Yellow}✗ Errore imprevisto: {ex.Message}{Colors.Reset}");
+}
+
+    }
+    
 }

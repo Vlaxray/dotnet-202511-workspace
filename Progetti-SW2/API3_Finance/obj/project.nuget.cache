@@ -1,8 +1,75 @@
 {
   "version": 2,
-  "dgSpecHash": "qvXDbmjVMjc=",
+  "dgSpecHash": "cItkjpgQ404=",
   "success": true,
-  "projectFilePath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\API3_Finance\\api3_Finance.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\valer\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.4\\microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.codeanalysis.common\\4.8.0\\microsoft.codeanalysis.common.4.8.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.8.0\\microsoft.codeanalysis.csharp.4.8.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\4.8.0\\microsoft.codeanalysis.csharp.workspaces.4.8.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.8.0\\microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.codeanalysis.workspaces.msbuild\\4.8.0\\microsoft.codeanalysis.workspaces.msbuild.4.8.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.9\\microsoft.entityframeworkcore.9.0.9.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.9\\microsoft.entityframeworkcore.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.9\\microsoft.entityframeworkcore.analyzers.9.0.9.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.entityframeworkcore.design\\9.0.9\\microsoft.entityframeworkcore.design.9.0.9.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.9\\microsoft.entityframeworkcore.relational.9.0.9.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0\\microsoft.extensions.configuration.9.0.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.extensions.configuration.json\\9.0.0\\microsoft.extensions.configuration.json.9.0.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.9\\microsoft.extensions.dependencymodel.9.0.9.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\9.0.0\\pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\restsharp\\108.0.3\\restsharp.108.0.3.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\system.composition.attributedmodel\\7.0.0\\system.composition.attributedmodel.7.0.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\system.composition.convention\\7.0.0\\system.composition.convention.7.0.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\system.composition.hosting\\7.0.0\\system.composition.hosting.7.0.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\system.composition.runtime\\7.0.0\\system.composition.runtime.7.0.0.nupkg.sha512",
+    "C:\\Users\\valer\\.nuget\\packages\\system.composition.typedparts\\7.0.0\\system.composition.typedparts.7.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "Microsoft.Extensions.Configuration PackageReference non verrà rimosso. È consigliabile rimuovere questo pacchetto dalle dipendenze, poiché è probabile che non sia necessario.",
+      "projectPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj",
+      "libraryId": "Microsoft.Extensions.Configuration",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "Microsoft.Extensions.Configuration.Json PackageReference non verrà rimosso. È consigliabile rimuovere questo pacchetto dalle dipendenze, poiché è probabile che non sia necessario.",
+      "projectPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj",
+      "libraryId": "Microsoft.Extensions.Configuration.Json",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Il pacchetto 'RestSharp' 108.0.3 presenta una vulnerabilità nota di gravità moderata, https://github.com/advisories/GHSA-4rr6-2v9v-wcpc",
+      "projectPath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\valer\\OneDrive\\Desktop\\NET Corso\\dotnet-202511-workspace\\Progetti-SW2\\api3_finance\\api3_Finance.csproj",
+      "libraryId": "RestSharp",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }
