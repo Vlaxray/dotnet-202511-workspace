@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        /* From Uiverse.io by vinodjangid07 */
+        .button {
+            width: 120px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            cursor: pointer;
+            border: 3px solid rgb(45, 169, 201);
+            background-color: rgb(41, 154, 189);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.137);
+        }
+
+        .text {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(27, 27, 27);
+            color: white;
+        }
+
+        .arrow path {
+            fill: rgb(19, 19, 19);
+        }
+
+        .button:hover .arrow {
+            animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @keyframes slide-in-left {
+            0% {
+                transform: translateX(-8px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
+        .button:active {
+            transform: scale(0.97);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; justify-content: center;">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="features.html">Features</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <body>
+        <h1 style="text-align: center;">High Performance SimRigs</h1>
+
+        <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 40px;">
+
+
+            <img src="./simrigwebsite/s2.png" alt="s2" style="width: 500px;">
+
+            <div style="display: flex; flex-direction: column; justify-content: center; gap: 20px;">
+                <h3 style="margin: 0;">Low Latency and Low Power Consumption</h3>
+                <h3 style="margin: 0;">High Precision and High Accuracy</h3>
+                <h3 style="margin: 0;">High fidelity Force Feedback</h3>
+            </div>
+
+        </div>
+
+        <!-- Pulsante centrato -->
+        <div style="display: flex; justify-content: center; margin-top: 60px;">
+            <div class="d-flex justify-content-center mt-4">
+                <button class="button">
+                    <span class="text">Buy Now!</span>
+                    <svg class="arrow" viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+
+        <footer style="margin-top: auto" class="bg-dark text-white text-center p-3 mt-4">
+            <p>© 2025 Vlaxray. All rights reserved.</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
