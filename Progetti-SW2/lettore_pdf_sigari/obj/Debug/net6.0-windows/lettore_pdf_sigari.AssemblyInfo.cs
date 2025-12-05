@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("lettore_pdf_sigari")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e278151d459a9487dda128133182394940b1d3a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+730a908778adc08fd7412c9f08df38ae2ffe71f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("lettore_pdf_sigari")]
 [assembly: System.Reflection.AssemblyTitleAttribute("lettore_pdf_sigari")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

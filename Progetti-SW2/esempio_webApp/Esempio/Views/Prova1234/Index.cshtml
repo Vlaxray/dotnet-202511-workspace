@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastificio Sapori | Pasta Artigianale&Keto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="./wwwroot/css/Prova.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.ico">
+
+</head>
+<body>
+    <header>
+        <div class="banner-flex">
+            <img src="img/logo.jpg" alt="Pasta d'Emozioni" class="logo">
+            <h1>Pastificio Sapori</h1>
+            <button id="darkModeToggle" class="btnm">🌓 </button>
+
+            <button class="btnm" onclick="startMusic()">🎵 </button>
+<audio id="bgMusic" src="audio/Memories.mp3" loop></audio>
+            <nav>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">&#9776;</label>
+                <ul class="nav-links">
+                    <li><a href="#home">   Home   </a></li>
+                    <li><a href="#pasta">La Nostra Arte   </a></li>
+                    <li><a href="#process">Lavorazione   </a></li>
+                    <li><a href="#contatti">Emozioni Condivise</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Prodotti Artigianali <br>che Raccontano Emozioni</h1>
+            <p>Ogni forma è un inno alla tradizione e all'innovazione keto</p>
+            <a href="#pasta" class="btn">Assapora l'Esperienza</a>
+        </div>
+    </section>
+
+    <section id="pasta" class="section">
+        <div class="container">
+            <h2>La Nostra Arte in Ogni Forma</h2>
+            <p class="section-subtitle">Forme che accarezzano il palato, sapori che riscaldano il cuore</p>
+        <div class="pasta-grid">
+                <div class="pasta-card">
+                    <h3 class="agnolotti">Pasta Ripiena</h3>
+                    <img src="/img/agnolotti.jpg" alt="agnolotti">
+                    <div class="pasta-card-content">
+                        <p>Un abbraccio di pasta fresca ripiena, con ingredienti selezionati e un tocco di amore.</p>
+                        <p></p>
+                        <div class="nutrition-info">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pasta-card">
+                    <h3>Tagliatelle Artigianali</h3>
+                    <img src="/img/tagliatelle.jpg" alt="Tagliatelle Keto">
+                    <div class="pasta-card-content">
+                        <p>Nastri di seta che ricordano le mani esperte delle nostre nonne, anche in versione keto-friendly.</p>
+                        <div class="nutrition-info">
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="pasta-card">
+                    <h3>Paella e Sangria</h3>
+                    <img src="/img/paella.jpg" alt="meringa">
+                    <div class="pasta-card-content">
+                        <p>Un’esplosione di sapori con gamberoni, cozze, vongole, calamari e verdure.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process section">
+        <div class="container">
+            <h2>L'Arte della Lavorazione</h2>
+            <p class="section-subtitle">Dalla nostra passione alla vostra tavola</p>
+            <img src="/img/SAPORI QUADRETTI.jpg" class="foto3">           
+            <img src="/img/8marzo.jpg" class="foto4">
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="process-icon">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <h3>Selezione</h3>
+                    <p>Ingredienti puri, lavorati con cura per garantire qualità e rispetto della dieta keto.</p>
+                </div>
+                
+                    
+                <div class="process-step">
+                    <div class="process-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Formatura</h3>
+                    <p>Ogni forma viene creata con strumenti tradizionali, pezzo unico dopo pezzo unico.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Essiccazione</h3>
+                    <p>Lenta e naturale, per preservare struttura e nutrienti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="keto" class="keto-section section">
+        <div class="container">
+            <h2>Vieni a Trovarci!</h2>
+            
+</a>
+
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Emozioni Condivise</h2>
+            <p class="section-subtitle">Le voci di chi ha assaporato la nostra arte</p>
+           
+
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p class="testimonial-text">La prima forchettata mi ha riportato all'infanzia, senza il peso dei carboidrati. Una magia!</p>
+                    <p class="testimonial-author">- Elena R., Torino</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">Finalmente mia moglie keto e io possiamo condividere lo stesso piatto di pasta, con lo stesso sorriso.</p>
+                    <p class="testimonial-author">- Marco B., Milano</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">Non credevo possibile una texture così perfetta senza grano. Hanno superato ogni mia aspettativa.</p>
+                    <p class="testimonial-author">- Chef Andrea P.</p>
+                </div>
+                
+                <div class="slider-controls">
+                    <span class="slider-dot active" data-index="0"></span>
+                    <span class="slider-dot" data-index="1"></span>
+                    <span class="slider-dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contatti">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Pastificio Sapori<br><img src="img/logo.jpg" alt="Pasta d'Emozioni" class="logo2"></h3>
+                <a href="https://maps.app.goo.gl/is5j7dU5TxBDnpcP6" target="_blank">📍 Via Mazzini 36/a<br>
+                  10122 Torino, Italia</a>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/saporitorino/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/393317146936"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/pastificiosaporitorino"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Orari</h3>
+                <ul>
+                    <li>Lun: 12:00 - 19:30</li>
+                    <li>Mar-Sab: 10:00 - 19:30</li>
+                    <li>Dom: Chiuso</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contatti</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+390123456789">+39 011 530347</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:pastificio.saporitorino@gmail.com">pastificio.saporitorino@gmail.com</a></li>
+                    <li><i class="fas fa-shipping-fast"></i> Spedizioni in tutta Italia</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Pastificio Sapori - Pasta Artigianale&Keto. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
