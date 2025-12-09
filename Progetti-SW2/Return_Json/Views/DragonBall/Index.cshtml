@@ -1,0 +1,47 @@
+@{
+    ViewData["Title"] = "Dragon Ball Character Search";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-header bg-warning text-center">
+                    <h2>🐉 Dragon Ball Character Search</h2>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            @ViewBag.Error
+                        </div>
+                    }
+
+                    <form asp-action="Search" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome Personaggio</label>
+                            <input type="text" 
+                                   class="form-control" 
+                                   id="name" 
+                                   name="name" 
+                                   placeholder="Es: Goku, Vegeta, Piccolo..." 
+                                   required>
+                            <div class="form-text">
+                                Cerca un personaggio di Dragon Ball
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100">
+                            🔍 Cerca
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mt-3 text-center text-muted">
+                <small>
+                    I risultati vengono salvati nel database per caricamenti più veloci!
+                </small>
+            </div>
+        </div>
+    </div>
+</div>

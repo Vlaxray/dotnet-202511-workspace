@@ -1,8 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model DragonBallCharacter
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>@Model.Name</h2>
+
+<img src="@Model.Image" width="250" style="border-radius:10px" />
+
+<p><strong>Razza:</strong> @Model.Race</p>
+<p><strong>Ki:</strong> @Model.Ki</p>
+<p><strong>Max Ki:</strong> @Model.MaxKi</p>
+<p><strong>Affiliazione:</strong> @Model.Affiliation</p>
+
+<p>@Model.Description</p>
+
+<a class="btn btn-secondary" href="/DragonBall/Index">Cerca un altro personaggio</a>

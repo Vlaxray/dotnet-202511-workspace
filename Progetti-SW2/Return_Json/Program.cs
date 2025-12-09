@@ -1,27 +1,46 @@
-
+using Return_Json.Models;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-// Registra HttpClient
+builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
 
-// Aggiungi i controllers
-builder.Services.AddControllers();
-
-// Opzionale: configura JSON
-builder.Services.AddControllers()
-    .AddJsonOptions(options =>
-    {
-        options.JsonSerializerOptions.PropertyNamingPolicy = null; // Mantiene nomi originali
-        options.JsonSerializerOptions.WriteIndented = true; // JSON formattato
-    });
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    var conn = builder.Configuration.GetConnectionString("DefaultConnection");
+    options.UseMySql(conn, ServerVersion.AutoDetect(conn));
+});
 
 var app = builder.Build();
 
-// Configura la pipeline
+// 🔥 AGGIUNGI QUESTO BLOCCO QUI - Crea il database e le tabelle automaticamente
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var context = services.GetRequiredService<ApplicationDbContext>();
+        
+        // Crea il database se non esiste
+        context.Database.EnsureCreated();
+        
+        Console.WriteLine("✅ Database e tabelle create con successo!");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"❌ Errore durante la creazione del database: {ex.Message}");
+    }
+}
+
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
 app.UseAuthorization();
-app.MapControllers(); // IMPORTANTE: mappa i controllers
-app.MapGet("/", () => "API funzionante! Vai su /api/prodotti/lista");
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}"
+);
+
 app.Run();
