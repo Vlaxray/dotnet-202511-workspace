@@ -1,10 +1,19 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App, { DateTime } from './App';
+import Intro from './intro';
+import Ciao from './ciao';
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+import Card from 'react-bootstrap/Card';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
-)
+    <DateTime />
+    <Intro />
+    <Ciao />
+    <Card />
+  </React.StrictMode>
+  
+);
