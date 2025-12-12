@@ -1,0 +1,222 @@
+/* src/styles/Performance.css */
+.cyber-loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+        #000000 0%,
+        #0a0a1a 25%,
+        #001122 50%,
+        #0a0a1a 75%,
+        #000000 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-family: 'Share Tech Mono', monospace;
+    overflow: hidden;
+}
+
+/* Effetto particelle di sfondo nel loading */
+.cyber-loading-screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(0, 238, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%);
+    animation: background-pulse 4s ease-in-out infinite;
+}
+
+@keyframes background-pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+}
+
+.loading-progress {
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 20, 40, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 238, 255, 0.3);
+    box-shadow: 
+        0 0 30px rgba(0, 238, 255, 0.2),
+        inset 0 0 20px rgba(0, 238, 255, 0.1);
+}
+
+.progress-bar {
+    height: 4px;
+    background: linear-gradient(90deg, 
+        #000 0%,
+        #00eeff 25%,
+        #ff00ff 50%,
+        #00eeff 75%,
+        #000 100%
+    );
+    background-size: 200% 100%;
+    animation: loading-gradient 2s infinite linear;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+@keyframes loading-gradient {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+.loading-text {
+    color: #00eeff;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #00eeff;
+    margin-bottom: 10px;
+    animation: text-pulse 1.5s infinite;
+}
+
+.loading-subtext {
+    color: #00ff9d;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+@keyframes text-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.component-loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    gap: 20px;
+}
+
+.cyber-spinner {
+    width: 60px;
+    height: 60px;
+    border: 3px solid transparent;
+    border-top: 3px solid #00eeff;
+    border-right: 3px solid #ff00ff;
+    border-bottom: 3px solid #00ff9d;
+    border-radius: 50%;
+    animation: cyber-spin 1s linear infinite;
+    position: relative;
+}
+
+.cyber-spinner::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid rgba(0, 238, 255, 0.3);
+    border-radius: 50%;
+    animation: cyber-spin 2s linear infinite reverse;
+}
+
+@keyframes cyber-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-status {
+    color: #00eeff;
+    font-size: 0.9rem;
+    text-align: center;
+    animation: status-pulse 2s infinite;
+}
+
+@keyframes status-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+/* Ottimizzazioni per mobile */
+@media (max-width: 768px) {
+    .loading-progress {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .loading-text {
+        font-size: 0.9rem;
+    }
+    
+    .loading-subtext {
+        font-size: 0.7rem;
+    }
+    
+    .cyber-spinner {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Ottimizzazioni per browser lenti */
+@media (prefers-reduced-motion: reduce) {
+    .cyber-spinner,
+    .progress-bar,
+    .loading-text,
+    .loading-status,
+    .blink {
+        animation: none;
+    }
+    
+    .cyber-loading-screen::before {
+        animation: none;
+    }
+}
+
+/* Ottimizzazioni per stampa */
+@media print {
+    .cyber-loading-screen,
+    .component-loading,
+    .cyber-spinner {
+        display: none !important;
+    }
+}
+.folders-loading {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.folder-placeholder {
+    width: 200px;
+    height: 150px;
+    background: rgba(0, 40, 80, 0.3);
+    border: 2px dashed rgba(0, 238, 255, 0.3);
+    border-radius: 8px;
+    animation: folder-pulse 1.5s infinite alternate;
+}
+
+@keyframes folder-pulse {
+    0% { opacity: 0.3; transform: translateY(0); }
+    100% { opacity: 0.6; transform: translateY(-5px); }
+}

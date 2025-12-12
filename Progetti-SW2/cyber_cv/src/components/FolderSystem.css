@@ -1,0 +1,579 @@
+/* src/components/FolderSystem.css */
+.folder-system {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Grid delle cartelle */
+.folders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.folders-grid.mobile {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* Stile cartella */
+.cyber-folder {
+    background: rgba(0, 20, 40, 0.7);
+    border: 2px solid var(--folder-color);
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.cyber-folder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(var(--folder-color-rgb), 0.1) 50%,
+        transparent 70%
+    );
+    animation: folder-shine 3s infinite linear;
+}
+
+@keyframes folder-shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.cyber-folder.open {
+    box-shadow: 
+        0 0 30px var(--folder-color),
+        inset 0 0 20px rgba(var(--folder-color-rgb), 0.2);
+    transform: translateY(-5px);
+}
+
+.folder-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 10px currentColor);
+}
+
+.folder-title {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 5px var(--folder-color);
+}
+
+.folder-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8rem;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { 
+        opacity: 1;
+        box-shadow: 0 0 0 0 var(--folder-color);
+    }
+    50% { 
+        opacity: 0.7;
+        box-shadow: 0 0 0 5px rgba(var(--folder-color-rgb), 0);
+    }
+}
+
+.status-text {
+    color: #aaa;
+    letter-spacing: 1px;
+}
+
+.folder-items-count {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    color: var(--folder-color);
+    border: 1px solid var(--folder-color);
+}
+
+/* Contenuto cartella */
+.folder-content-container {
+    background: rgba(0, 20, 40, 0.85);
+    border: 2px solid var(--folder-color, #00eeff);
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+}
+
+.folder-content {
+    padding: 30px;
+}
+
+/* Header contenuto */
+.content-header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(var(--folder-color-rgb), 0.3);
+}
+
+.content-title {
+    color: var(--folder-color, #00eeff);
+    font-size: 1.8rem;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 10px var(--folder-color);
+}
+
+.content-navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-button {
+    background: rgba(var(--folder-color-rgb), 0.2);
+    border: 1px solid var(--folder-color);
+    color: var(--folder-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover:not(:disabled) {
+    background: var(--folder-color);
+    color: #000;
+    transform: scale(1.1);
+}
+
+.nav-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.content-counter {
+    color: #fff;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.1rem;
+}
+
+.current-index {
+    color: var(--folder-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.total-items {
+    color: #888;
+}
+
+/* Contenuto items */
+.content-item {
+    background: rgba(0, 30, 60, 0.5);
+    border-radius: 8px;
+    padding: 25px;
+    border-left: 4px solid var(--folder-color);
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item-title {
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+}
+
+.item-company,
+.item-year,
+.item-institution {
+    color: var(--folder-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.item-period,
+.item-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #00ff9d;
+    font-size: 0.9rem;
+}
+
+.item-status {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.item-status.in-sviluppo {
+    background: rgba(255, 165, 0, 0.2);
+    color: #ffa500;
+    border: 1px solid #ffa500;
+}
+
+.item-status.completato {
+    background: rgba(0, 255, 157, 0.2);
+    color: #00ff9d;
+    border: 1px solid #00ff9d;
+}
+
+.item-status.in-produzione {
+    background: rgba(0, 238, 255, 0.2);
+    color: #00eeff;
+    border: 1px solid #00eeff;
+}
+
+/* Descrizioni */
+.item-description {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+/* Tecnologie */
+.technologies-section,
+.achievements-section,
+.features-section,
+.courses-section {
+    margin-bottom: 20px;
+}
+
+.technologies-section h5,
+.achievements-section h5,
+.features-section h5,
+.courses-section h5 {
+    color: var(--folder-color);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-tag {
+    background: rgba(var(--folder-color-rgb), 0.1);
+    color: var(--folder-color);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(var(--folder-color-rgb), 0.3);
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: rgba(var(--folder-color-rgb), 0.3);
+    transform: translateY(-2px);
+}
+
+/* Liste */
+.achievements-list,
+.features-list {
+    list-style: none;
+    padding: 0;
+}
+
+.achievement-item,
+.feature-item {
+    color: #ddd;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.achievement-bullet {
+    color: var(--folder-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.feature-icon {
+    color: #00ff9d;
+    margin-right: 10px;
+}
+
+/* Links progetti */
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.project-link.github {
+    background: rgba(24, 23, 23, 0.8);
+    color: #fff;
+    border: 1px solid #333;
+}
+
+.project-link.github:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.project-link.demo {
+    background: rgba(var(--folder-color-rgb), 0.2);
+    color: var(--folder-color);
+    border: 1px solid var(--folder-color);
+}
+
+.project-link.demo:hover {
+    background: var(--folder-color);
+    color: #000;
+    transform: translateY(-2px);
+}
+
+/* Formazione */
+.education-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detail-row {
+    display: flex;
+    gap: 15px;
+}
+
+.detail-label {
+    color: #aaa;
+    min-width: 100px;
+}
+
+.detail-value {
+    color: #fff;
+}
+
+.detail-value.grade {
+    color: #00ff9d;
+    font-weight: bold;
+}
+
+.detail-value.credential {
+    color: var(--folder-color);
+    font-weight: bold;
+}
+
+.thesis-section h5 {
+    color: var(--folder-color);
+    margin-bottom: 8px;
+}
+
+.thesis-title {
+    color: #ddd;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.course-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.course-tag {
+    background: rgba(0, 238, 255, 0.1);
+    color: #00eeff;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(0, 238, 255, 0.3);
+}
+
+/* Skills */
+.skills-category {
+    color: var(--folder-color);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.skills-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.skill-item {
+    background: rgba(0, 30, 60, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 3px solid var(--folder-color);
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    color: #fff;
+    font-weight: bold;
+}
+
+.skill-percentage {
+    color: var(--folder-color);
+    font-weight: bold;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.skill-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .folder-system {
+        padding: 10px;
+    }
+    
+    .content-header-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .content-title {
+        font-size: 1.4rem;
+    }
+    
+    .content-item {
+        padding: 20px;
+    }
+    
+    .content-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .project-links {
+        flex-direction: column;
+    }
+    
+    .nav-button {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .tech-tags {
+        gap: 8px;
+    }
+    
+    .tech-tag,
+    .course-tag {
+        font-size: 0.75rem;
+        padding: 4px 12px;
+    }
+}
+
+/* Animazioni */
+@keyframes contentAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-body > * {
+    animation: contentAppear 0.5s ease-out;
+}
+
+/* Effetti hover */
+.cyber-folder:hover:not(.open) {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Variabili CSS per i colori */
+.cyber-folder[style*="--folder-color: #00eeff"] {
+    --folder-color-rgb: 0, 238, 255;
+}
+
+.cyber-folder[style*="--folder-color: #ff00ff"] {
+    --folder-color-rgb: 255, 0, 255;
+}
+
+.cyber-folder[style*="--folder-color: #00ff9d"] {
+    --folder-color-rgb: 0, 255, 157;
+}
+
+.cyber-folder[style*="--folder-color: #ff9900"] {
+    --folder-color-rgb: 255, 153, 0;
+}

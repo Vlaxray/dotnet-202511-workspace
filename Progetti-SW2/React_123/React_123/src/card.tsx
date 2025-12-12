@@ -6,9 +6,7 @@ interface CardProps {
 
 
 export default function Card({title , body , img} : CardProps){
-
     return(
-        
         <div className="card" >
             <img className="img-fluid" src={img} alt="Card image cap" />
             <div className="card-body">
@@ -17,6 +15,5 @@ export default function Card({title , body , img} : CardProps){
                 <a href="#" className="btn btn-primary">Go somewhere</a>
             </div>
         </div>
-       
     );
 }
