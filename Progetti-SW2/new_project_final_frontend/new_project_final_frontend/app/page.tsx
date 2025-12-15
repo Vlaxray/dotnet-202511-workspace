@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Prodotti from "./Prodotti";
 
 type Meal = {
@@ -14,21 +14,50 @@ type Meal = {
 
 export default function Home() {
   const [query, setQuery] = useState("");
+  const [suggestions, setSuggestions] = useState<string[]>([]);
   const [meal, setMeal] = useState<Meal | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const handleSearch = async () => {
-    if (!query.trim()) return;
+  // 🔹 AUTOCOMPLETE (solo DB)
+  useEffect(() => {
+    if (query.trim().length < 1) {
+      setSuggestions([]);
+      return;
+    }
+
+    const timeout = setTimeout(async () => {
+      try {
+        const res = await fetch(
+          `http://localhost:5000/api/meals/suggest?q=${query}`
+        );
+
+        if (res.ok) {
+          const data: string[] = await res.json();
+          setSuggestions(data);
+        }
+      } catch {
+        setSuggestions([]);
+      }
+    }, 300); // debounce 300ms
+
+    return () => clearTimeout(timeout);
+  }, [query]);
+
+  // 🔹 RICERCA COMPLETA (DB → API)
+  const handleSearch = async (q?: string) => {
+    const searchQuery = q ?? query;
+    if (!searchQuery.trim()) return;
 
     setLoading(true);
     setError(null);
+    setSuggestions([]);
 
     try {
       const res = await fetch("http://localhost:5000/api/meals/search", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query }),
+        body: JSON.stringify({ query: searchQuery }),
       });
 
       if (!res.ok) {
@@ -51,21 +80,40 @@ export default function Home() {
 
         {/* INPUT */}
         <input
-          type="text"
-          className="form-control mb-3"
-          placeholder="Scrivi il nome del piatto (es. Arrabbiata)"
+          className="form-control"
+          placeholder="Scrivi una lettera..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={(e) => {
-            if (e.key === "Enter") handleSearch();
+            if (e.key === "Enter") {
+              handleSearch();
+            }
           }}
         />
+
+        {/* SUGGERIMENTI */}
+        {suggestions.length > 0 && (
+          <ul className="list-group mt-2">
+            {suggestions.map((name) => (
+              <li
+                key={name}
+                className="list-group-item list-group-item-action"
+                onClick={() => {
+                  setQuery(name);
+                  handleSearch(name);
+                }}
+              >
+                {name}
+              </li>
+            ))}
+          </ul>
+        )}
 
         {/* BOTTONE */}
         <button
           type="button"
-          className="btn btn-success mb-4"
-          onClick={handleSearch}
+          className="btn btn-success mt-3 mb-4"
+          onClick={() => handleSearch()}
         >
           Cerca
         </button>

@@ -77,4 +77,69 @@ public class MealsController : ControllerBase
         ));
     }
 
+    [HttpGet("suggest")]
+    public async Task<IActionResult> Suggest([FromQuery] string q)
+    {
+        if (string.IsNullOrWhiteSpace(q) || q.Length < 1)
+            return Ok(Array.Empty<string>());
+
+        q = q.Trim().ToLowerInvariant();
+
+        // 1️⃣ TENTATIVO: DATABASE
+        var dbResults = await _db.Meals
+            .Where(m => m.Name.ToLower().StartsWith(q))
+            .OrderBy(m => m.Name)
+            .Select(m => m.Name)
+            .Take(10)
+            .ToListAsync();
+
+        if (dbResults.Count > 0)
+        {
+            Console.WriteLine($"[SUGGEST][DB HIT] '{q}'");
+            return Ok(dbResults);
+        }
+
+        Console.WriteLine($"[SUGGEST][DB MISS] '{q}' → API");
+
+        // 2️⃣ FALLBACK: API ESTERNA
+        var apiResponse = await _http.GetFromJsonAsync<MealApiResponse>(
+            $"https://www.themealdb.com/api/json/v1/1/search.php?s={q}"
+        );
+
+        if (apiResponse?.Meals == null)
+            return Ok(Array.Empty<string>());
+
+        var names = new List<string>();
+
+        foreach (var mealApi in apiResponse.Meals.Take(10))
+        {
+            // evita duplicati
+            if (await _db.Meals.AnyAsync(m => m.ExternalId == mealApi.IdMeal))
+                continue;
+
+            var meal = new Meal
+            {
+                ExternalId = mealApi.IdMeal,
+                Name = mealApi.StrMeal,
+                Category = mealApi.StrCategory,
+                Area = mealApi.StrArea,
+                Instructions = mealApi.StrInstructions,
+                Thumbnail = mealApi.StrMealThumb
+            };
+
+            _db.Meals.Add(meal);
+            names.Add(meal.Name);
+        }
+
+        if (names.Count > 0)
+        {
+            await _db.SaveChangesAsync();
+            Console.WriteLine($"[SUGGEST][API STORE] {names.Count} elementi salvati");
+        }
+
+        return Ok(names);
+    }
+
+
+
 }
