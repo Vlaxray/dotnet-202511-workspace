@@ -1,29 +1,57 @@
+using Microsoft.EntityFrameworkCore;
+using new_project_final.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("frontend",
+        policy =>
+            policy.WithOrigins("http://localhost:3000")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod());
+});
+
+// 🔹 QUESTA È LA CONNECTION STRING
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=/data/meals.db")
+);
+
+
+
+builder.Services.AddCors(o =>
+{
+    o.AddPolicy("frontend",
+        p => p.AllowAnyHeader()
+              .AllowAnyMethod()
+              .WithOrigins("http://localhost:3000"));
+});
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-app.UseRouting();
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.Migrate();
+}
 
-app.UseAuthorization();
 
-app.MapStaticAssets();
+app.UseCors("frontend");
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+app.MapControllers();
 
+// 🔹 binding per Docker
+app.Urls.Add("http://0.0.0.0:8080");
+app.UseCors("frontend");
 
 app.Run();

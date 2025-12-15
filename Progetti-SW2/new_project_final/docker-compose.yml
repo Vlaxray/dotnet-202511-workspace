@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    container_name: meals_api
+    ports:
+      - "5000:8080"
+    volumes:
+      - meals_data:/data
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+volumes:
+  meals_data:
