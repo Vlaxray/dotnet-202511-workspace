@@ -1,6 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { AutoComplete } from "primereact/autocomplete";
+import { Button } from "primereact/button";
+import { Card } from "primereact/card";
+import { ProgressSpinner } from "primereact/progressspinner";
 import Prodotti from "./Prodotti";
 
 type Meal = {
@@ -39,7 +43,7 @@ export default function Home() {
       } catch {
         setSuggestions([]);
       }
-    }, 300); // debounce 300ms
+    }, 300);
 
     return () => clearTimeout(timeout);
   }, [query]);
@@ -60,9 +64,7 @@ export default function Home() {
         body: JSON.stringify({ query: searchQuery }),
       });
 
-      if (!res.ok) {
-        throw new Error("Errore API");
-      }
+      if (!res.ok) throw new Error();
 
       const data: Meal = await res.json();
       setMeal(data);
@@ -75,57 +77,54 @@ export default function Home() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50">
-      <main className="w-full max-w-3xl py-32 px-16 bg-white text-center">
+    <div className="min-h-screen flex justify-center items-center bg-gradient-to-br from-green-50 to-orange-50">
+      <Card
+        title="🍝 Cerca un piatto"
+        subTitle="Ingredienti, tradizioni e sapori"
+        className="w-full max-w-3xl shadow-4"
+      >
+        <div className="flex flex-col gap-3">
+          
+          {/* AUTOCOMPLETE */}
+          <AutoComplete
+            value={query}
+            suggestions={suggestions}
+            completeMethod={() => {}}
+            onChange={(e) => setQuery(e.value)}
+            onSelect={(e) => handleSearch(e.value)}
+            placeholder="Scrivi una lettera..."
+            className="w-full"
+            inputClassName="w-full"
+          />
 
-        {/* INPUT */}
-        <input
-          className="form-control"
-          placeholder="Scrivi una lettera..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter") {
-              handleSearch();
-            }
-          }}
-        />
+          {/* BOTTONE */}
+          <Button
+            label="Cerca"
+            icon="pi pi-search"
+            className="p-button-success"
+            onClick={() => handleSearch()}
+          />
 
-        {/* SUGGERIMENTI */}
-        {suggestions.length > 0 && (
-          <ul className="list-group mt-2">
-            {suggestions.map((name) => (
-              <li
-                key={name}
-                className="list-group-item list-group-item-action"
-                onClick={() => {
-                  setQuery(name);
-                  handleSearch(name);
-                }}
-              >
-                {name}
-              </li>
-            ))}
-          </ul>
-        )}
+          {/* LOADING */}
+          {loading && (
+            <div className="flex justify-center mt-4">
+              <ProgressSpinner style={{ width: "40px", height: "40px" }} />
+            </div>
+          )}
 
-        {/* BOTTONE */}
-        <button
-          type="button"
-          className="btn btn-success mt-3 mb-4"
-          onClick={() => handleSearch()}
-        >
-          Cerca
-        </button>
+          {/* ERRORE */}
+          {error && (
+            <p className="text-red-600 text-center mt-2">{error}</p>
+          )}
 
-        {/* STATI */}
-        {loading && <p>Caricamento...</p>}
-        {error && <p className="text-danger">{error}</p>}
-
-        {/* RISULTATO */}
-        {meal && <Prodotti meal={meal} />}
-
-      </main>
+          {/* RISULTATO */}
+          {meal && (
+            <div className="mt-4">
+              <Prodotti meal={meal} />
+            </div>
+          )}
+        </div>
+      </Card>
     </div>
   );
 }
